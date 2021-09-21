@@ -9,6 +9,7 @@ or
 const Tess = require('Tess.js').default;
 ```
 
+
 # Functions
 ## isNil()
 Checks if a variable is `undefined` or `null`.
