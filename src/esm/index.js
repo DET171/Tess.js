@@ -1,6 +1,6 @@
 const Tess = {};
 
-import isNil from 'misc/isNil.js';
+import isNil from './misc/isNil.js';
 
 Tess.isNil = isNil;
 /* eslint-disable-line */
