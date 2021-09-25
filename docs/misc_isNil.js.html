@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: misc/isNil.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,38 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: misc/isNil.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+* Returns true if the value is null or undefined
+*
+* @since v0.0.1
+* @category Value
+* @param {*} value - The value to check
+* @returns boolean
+* @example
+* isNill(null)       //=> true
+* isNill(undefined)  //=> true
+* isNill('')         //=> false
+* isNill([])         //=> false
+* isNill({})         //=> false
+*/
+const isNil = (value) => {
+	if (value == undefined || value == null) return true;
+	else return false;
+};
 
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+export default isNil;
+</code></pre>
+        </article>
+    </section>
 
 
 

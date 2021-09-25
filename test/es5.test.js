@@ -9,3 +9,9 @@ test('Tests isNil()', () => {
 test('arrayify()', () => {
 	expect(utils.arrayify(hello)[0]).toBe('hello');
 });
+test('atob()', () => {
+	expect(utils.atob('hello')).toBe('aGVsbG8=');
+});
+test('btoa()', () => {
+	expect(utils.btoa('aGVsbG8=')).toBe('hello');
+});

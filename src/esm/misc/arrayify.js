@@ -1,5 +1,5 @@
 /**
-* Returns true if the value is null or undefined
+* Turns a value into an array
 *
 * @since v0.1.3
 * @category Convert
