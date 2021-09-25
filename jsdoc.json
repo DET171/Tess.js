@@ -2,10 +2,12 @@
     "source": {
         "includePattern": ".+\\.js(doc|x)?$",
         "include": ["."],
-        "exclude": ["node_modules", "src/cjs"]
+        "exclude": ["node_modules", "src/cjs", "docs"]
     },
+    "plugins": ["plugins/markdown"],
     "opts": {
         "destination": "./docs/",
-        "recurse": true
+        "recurse": true,
+        "template": "node_modules/clean-jsdoc-theme"
     }
 }

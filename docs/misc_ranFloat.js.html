@@ -28,7 +28,7 @@
 
 
     <title>
-      Home
+      misc/ranFloat.js
     </title>
 
     <!--[if lt IE 9]>
@@ -94,37 +94,38 @@
 
     <div id="main" class="main-content">
       
+      <h1 id='page-title' class="page-title">
+        misc/ranFloat.js
+      </h1>
+      
 
       
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+* Selects a random float point
+*
+* @since v0.2.0
+* @category Random
+* @param {*} min - The smallest number of the range to pick the random float from
+* @param {*} max - The largest number of the range to pick the random float from
+* @returns number
+* @example
+* ranFloat(3,10)
+*/
 
+const ranFloat = (min, max) => {
+	return Math.random() * (max - min) + min;
+};
 
-
-
-
-
-
-
-
-    
-
-
-    <section class="readme">
-        <article><h1>Usage</h1>
-<p>JS Modules:</p>
-<pre class="prettyprint source lang-js"><code>import { default as Tess } from 'tess.js';
+export default ranFloat;
 </code></pre>
-<p>Common JS:</p>
-<pre class="prettyprint source lang-js"><code>const Tess = require('tess.js').default;
-</code></pre>
-<h1>Functions</h1>
-<p>See the <a href="https://det171.github.io/Tess.js/">docs</a></p></article>
+        </article>
     </section>
-
-
 
 
 

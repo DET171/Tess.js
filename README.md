@@ -1,9 +1,9 @@
 # Usage
-Import the package:
+JS Modules:
 ```js
 import { default as Tess } from 'tess.js';
 ```
-or
+Common JS:
 ```js
 const Tess = require('tess.js').default;
 ```
