@@ -4,7 +4,7 @@
 * @since v0.0.1
 * @category Value
 * @param {*} value - The value to check
-* @returns {boolean}
+* @returns boolean
 * @example
 * isNill(null)       //=> true
 * isNill(undefined)  //=> true

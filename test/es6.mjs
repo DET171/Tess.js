@@ -4,3 +4,4 @@ let empty;
 let hello = 'hello';
 
 console.log(Tess.isNil(empty));
+console.log(Tess.arrayify(hello));

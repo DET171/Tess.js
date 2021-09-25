@@ -1,3 +1,7 @@
 coverage/
 out/
 node_modules/
+src/cjs/
+*.base.js
+*.base.mjs
+.parcel-cache
