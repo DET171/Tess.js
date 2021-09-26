@@ -1,9 +1,9 @@
-'use strict';
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-	value: true,
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
-exports['default'] = void 0;
+exports["default"] = void 0;
 
 /**
 * Returns true if the value is null or undefined
@@ -20,8 +20,8 @@ exports['default'] = void 0;
 * isNill({})         //=> false
 */
 var isNil = function isNil(value) {
-	if (value == undefined || value == null) return true;else return false;
+  if (value == undefined || value == null) return true;else return false;
 };
 
 var _default = isNil;
-exports['default'] = _default;
+exports["default"] = _default;

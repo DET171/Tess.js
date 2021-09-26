@@ -3,7 +3,7 @@
 *
 * @since v0.1.3
 * @category Convert
-* @param {*} value - The value convert to Base 64
+* @param {string/number} value - The value convert to Base 64
 * @returns string
 * @example
 * atob('hello')       //=> aGVsbG8=

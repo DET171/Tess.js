@@ -3,7 +3,7 @@
 *
 * @since v0.1.3
 * @category Convert
-* @param {*} value - The value decode
+* @param {string/number} value - The value decode
 * @returns string
 * @example
 * btoa('aGVsbG8=')       //=> hello

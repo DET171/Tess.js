@@ -3,8 +3,8 @@
 *
 * @since v0.2.0
 * @category Random
-* @param {*} min - The smallest number of the range to pick the random float from
-* @param {*} max - The largest number of the range to pick the random float from
+* @param {number} min - The smallest number of the range to pick the random float from
+* @param {number} max - The largest number of the range to pick the random float from
 * @returns number
 * @example
 * ranFloat(3,10)

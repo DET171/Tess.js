@@ -3,8 +3,8 @@
 *
 * @since v0.2.0
 * @category Random
-* @param {*} min - The smallest number of the range to pick the random number from
-* @param {*} max - The largest number of the range to pick the random number from
+* @param {number} min - The smallest number of the range to pick the random number from
+* @param {number} max - The largest number of the range to pick the random number from
 * @returns number
 * @example
 * ranInt(3,10)
