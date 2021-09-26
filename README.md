@@ -3,10 +3,12 @@ JS Modules:
 ```js
 import { default as Tess } from 'tess.js';
 ```
+
 Common JS:
 ```js
 const Tess = require('tess.js').default;
 ```
+
 Browser (ES5):
 ```html
 <script src="https://cdn.jsdelivr.net/npm/tess.js/browser/dist/bundle.js"></script>
@@ -16,6 +18,7 @@ Browser (ES5):
 console.log(Tess.isNil('Hello'));
 </script>
 ```
+
 Browser (ESM):
 ```html
 <script type="module">
@@ -31,3 +34,6 @@ console.log(Tess.isNil('Hello'));
 
 # Functions
 See the [docs](https://det171.github.io/Tess.js/)
+
+# License
+MIT
