@@ -2,7 +2,7 @@
     "source": {
         "includePattern": ".+\\.js(doc|x)?$",
         "include": ["."],
-        "exclude": ["node_modules", "src/cjs", "docs"]
+        "exclude": ["node_modules", "src/cjs", "docs", "browser"]
     },
     "plugins": ["plugins/markdown"],
     "opts": {
