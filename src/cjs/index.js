@@ -13,11 +13,13 @@ var _atob = _interopRequireDefault(require('./base64/atob.js'));
 
 var _btoa = _interopRequireDefault(require('./base64/btoa.js'));
 
-var _ranBool = _interopRequireDefault(require('./misc/ranBool.js'));
+var _ranBool = _interopRequireDefault(require('./ran/ranBool.js'));
 
-var _ranInt = _interopRequireDefault(require('./misc/ranInt.js'));
+var _ranInt = _interopRequireDefault(require('./ran/ranInt.js'));
 
-var _ranFloat = _interopRequireDefault(require('./misc/ranFloat.js'));
+var _ranFloat = _interopRequireDefault(require('./ran/ranFloat.js'));
+
+var _pickRan = _interopRequireDefault(require('./ran/pickRan.js'));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
@@ -32,5 +34,6 @@ Tess.arrayify = _arrayify['default'];
 Tess.ranBool = _ranBool['default'];
 Tess.ranFloat = _ranFloat['default'];
 Tess.ranInt = _ranInt['default'];
+Tess.pickRan = _pickRan['default'];
 var _default = Tess;
 exports['default'] = _default;

@@ -14,6 +14,7 @@
     "eslint-plugin-import": "^2.24.2",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-terser": "^2.1.0",
     "jest": "^27.2.1",
     "jsdoc": "~3.6.7"
@@ -28,11 +29,12 @@
   },
   "scripts": {
     "prebuild": "npm run lint",
-    "build": "browserify browser/.base.js -o browser/bundle.js && gulp",
-    "postbuild": "npm run lint:fix && npm run docs && npm run test",
+    "build": "gulp transpile && npm run docs && browserify browser/.base.js -o browser/bundle.js && gulp minify",
+    "postbuild": "npm run lint:fix && npm run test",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "docs": "jsdoc -c ./jsdoc.json -R ./README.md",
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "npm run build"
   }
 }

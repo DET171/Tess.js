@@ -8,3 +8,4 @@ console.log(Tess.arrayify(hello));
 console.log(Tess.ranInt(3, 10));
 console.log(Tess.ranFloat(10, 12));
 console.log(Tess.ranBool());
+console.log(Tess.pickRan(['hello', 'bye', 'ur not welcome']));
