@@ -1,3 +1,6 @@
+[![npm](https://img.shields.io/npm/dt/tess.js?style=flat-square)](https://www.npmjs.com/package/tess.js)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/tess.js?style=flat-square)
+
 # Usage
 JS Modules:
 ```js

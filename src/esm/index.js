@@ -6,6 +6,7 @@ const Tess = {};
 
 import isNil from './misc/isNil.js';
 import arrayify from './misc/arrayify.js';
+import wait from './misc/wait.js';
 import atob from './base64/atob.js';
 import btoa from './base64/btoa.js';
 import ranBool from './ran/ranBool.js';
@@ -21,5 +22,6 @@ Tess.ranBool = ranBool;
 Tess.ranFloat = ranFloat;
 Tess.ranInt = ranInt;
 Tess.pickRan = pickRan;
+Tess.wait = wait;
 
 export default Tess;

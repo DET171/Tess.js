@@ -9,6 +9,8 @@ var _isNil = _interopRequireDefault(require('./misc/isNil.js'));
 
 var _arrayify = _interopRequireDefault(require('./misc/arrayify.js'));
 
+var _wait = _interopRequireDefault(require('./misc/wait.js'));
+
 var _atob = _interopRequireDefault(require('./base64/atob.js'));
 
 var _btoa = _interopRequireDefault(require('./base64/btoa.js'));
@@ -35,5 +37,6 @@ Tess.ranBool = _ranBool['default'];
 Tess.ranFloat = _ranFloat['default'];
 Tess.ranInt = _ranInt['default'];
 Tess.pickRan = _pickRan['default'];
+Tess.wait = _wait['default'];
 var _default = Tess;
 exports['default'] = _default;
