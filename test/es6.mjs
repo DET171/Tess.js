@@ -9,8 +9,16 @@ console.log(Tess.ranInt(3, 10));
 console.log(Tess.ranFloat(10, 12));
 console.log(Tess.ranBool());
 console.log(Tess.pickRan(['hello', 'bye', 'ur not welcome']));
+
 (async function() {
   console.log('Hi');
   await Tess.wait(1000)
   console.log('Hi again');
 }());
+
+console.log(Tess.compact(`I'm
+a             multiline
+     string!`
+));
+
+console.log(Tess.rmFalsey([undefined, null, NaN, 1, 2, 3, 'hello']));
