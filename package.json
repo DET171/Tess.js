@@ -40,5 +40,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/DET171/Tess.js.git"
-  }
+  },
+  "homepage": "https://tess.js.org/"
 }

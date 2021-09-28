@@ -36,7 +36,7 @@ console.log(Tess.isNil('Hello'));
 ```
 
 # Functions
-See the [docs](https://det171.github.io/Tess.js/)
+See the [docs](https://tess.js.org//)
 
 # License
 MIT
