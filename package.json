@@ -29,7 +29,7 @@
   },
   "scripts": {
     "prebuild": "npm run lint",
-    "build": "gulp transpile && npm run docs && browserify browser/.base.js -o browser/bundle.js && gulp minify",
+    "build": "gulp transpile && echo {\"type\": \"commonjs\"} > src/cjs/package.json && npm run docs && browserify browser/.base.js -o browser/bundle.js && gulp minify",
     "postbuild": "npm run lint:fix && npm run test",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",

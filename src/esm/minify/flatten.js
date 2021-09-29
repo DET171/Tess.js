@@ -1,5 +1,5 @@
 /**
-*
+* Flattens array
 *
 * @since v0.4.5
 * @category minify
