@@ -21,3 +21,6 @@ test('btoa()', () => {
 test('compact()', () => {
 	expect(utils.compact(str)).toBe('I\'m a multiline string!');
 });
+test('flatten()', () => {
+	expect(utils.flatten([[[1, [1.1]], 2, 3], [4, 5]])[1]).toBe(1.1);
+});

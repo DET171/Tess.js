@@ -15,6 +15,7 @@ import ranFloat from './ran/ranFloat.js';
 import pickRan from './ran/pickRan.js';
 import compact from './minify/compact.js';
 import rmFalsey from './minify/rmFalsey.js';
+import flatten from './minify/flatten.js';
 
 Tess.isNil = isNil;
 Tess.atob = atob;
@@ -27,5 +28,6 @@ Tess.pickRan = pickRan;
 Tess.wait = wait;
 Tess.compact = compact;
 Tess.rmFalsey = rmFalsey;
+Tess.flatten = flatten;
 
 export default Tess;

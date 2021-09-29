@@ -3,7 +3,7 @@
 *
 * @since v0.4.4
 * @category minify
-* @param {array} value - The array to remove falsey values from
+* @param {array} array - The array to remove falsey values from
 * @returns array
 * @example
 * let array = [undefined, null, NaN, 1, 2, 3, 'hello']

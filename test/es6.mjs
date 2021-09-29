@@ -22,3 +22,5 @@ a             multiline
 ));
 
 console.log(Tess.rmFalsey([undefined, null, NaN, 1, 2, 3, 'hello']));
+
+console.log(Tess.flatten([[[1, [1.1]], 2, 3], [4, 5]]));

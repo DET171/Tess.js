@@ -3,7 +3,7 @@
 *
 * @since v0.4.4
 * @category minify
-* @param {string} value - The string to `compact`
+* @param {string} string - The string to `compact`
 * @returns string
 * @example
 * let str = `I'm

@@ -3,12 +3,12 @@
 *
 * @since v0.1.3
 * @category Convert
-* @param {string/number} value - The value decode
+* @param {string} string - The value decode
 * @returns string
 * @example
 * btoa('aGVsbG8=')       //=> hello
 */
-const btoa = (value) => {
-	return Buffer.from(value, 'base64').toString();
+const btoa = (string) => {
+	return Buffer.from(string, 'base64').toString();
 };
 export default btoa;
