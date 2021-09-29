@@ -34,7 +34,7 @@ var _uniq = _interopRequireDefault(require('./minify/uniq.js'));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 /**
-* @copyright MIT Licensed | Copyright © 2019-present Dusty
+* @copyright MIT Licensed | Copyright © 2021-present Dusty
 */
 var Tess = {};
 Tess.isNil = _isNil['default'];

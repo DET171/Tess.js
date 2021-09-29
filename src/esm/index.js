@@ -1,5 +1,5 @@
 /**
-* @copyright MIT Licensed | Copyright © 2019-present Dusty
+* @copyright MIT Licensed | Copyright © 2021-present Dusty
 */
 
 const Tess = {};
