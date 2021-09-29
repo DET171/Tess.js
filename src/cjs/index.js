@@ -31,6 +31,8 @@ var _flatten = _interopRequireDefault(require('./minify/flatten.js'));
 
 var _uniq = _interopRequireDefault(require('./minify/uniq.js'));
 
+var _shuffle = _interopRequireDefault(require('./ran/shuffle.js'));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 /**
@@ -50,5 +52,6 @@ Tess.compact = _compact['default'];
 Tess.rmFalsey = _rmFalsey['default'];
 Tess.flatten = _flatten['default'];
 Tess.uniq = _uniq['default'];
+Tess.shuffle = _shuffle['default'];
 var _default = Tess;
 exports['default'] = _default;

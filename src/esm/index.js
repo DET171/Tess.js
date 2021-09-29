@@ -17,6 +17,7 @@ import compact from './minify/compact.js';
 import rmFalsey from './minify/rmFalsey.js';
 import flatten from './minify/flatten.js';
 import uniq from './minify/uniq.js';
+import shuffle from './ran/shuffle.js';
 
 Tess.isNil = isNil;
 Tess.atob = atob;
@@ -31,5 +32,6 @@ Tess.compact = compact;
 Tess.rmFalsey = rmFalsey;
 Tess.flatten = flatten;
 Tess.uniq = uniq;
+Tess.shuffle = shuffle;
 
 export default Tess;
