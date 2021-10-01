@@ -19,7 +19,7 @@
     "jest": "^27.2.1",
     "jsdoc": "~3.6.7"
   },
-  "browser": "browser/dist/bundle.js",
+  "browser": "dist/browser.js",
   "main": "src/cjs/index.js",
   "module": "src/esm/index.js",
   "exports": {
@@ -30,7 +30,7 @@
   },
   "scripts": {
     "prebuild": "npm run lint",
-    "build": "gulp transpile && echo {\"type\": \"commonjs\"} > src/cjs/package.json && npm run docs && browserify browser/.base.js -o browser/bundle.js && gulp minify",
+    "build": "gulp transpile && echo {\"type\": \"commonjs\"} > src/cjs/package.json && npm run docs && gulp minify",
     "postbuild": "npm run lint:fix && npm run test",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",

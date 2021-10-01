@@ -17,15 +17,16 @@ Common JS:
 const Tess = require('tess.js').default;
 ```
 
-Browser (ES5):
-```html
+~~ Browser (ES5): ~~
+<!-- ```html
 <script src="https://cdn.jsdelivr.net/npm/tess.js/browser/dist/bundle.js"></script>
-<!-- You can now use Tess in other script tags -->
-<!-- e.g. -->
+<p> You can now use Tess in other script tags </p>
+<span> e.g. </span>
 <script>
 console.log(Tess.isNil('Hello'));
 </script>
-```
+``` -->
+REMOVED UNTIL BUNDLING BUG IS FIXED
 
 Browser (ESM):
 ```html

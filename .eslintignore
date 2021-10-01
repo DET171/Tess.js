@@ -2,4 +2,5 @@ out/
 test/
 *.bundle.js
 docs/
-browser/
+*.browser.js
+browser.js

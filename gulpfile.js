@@ -27,11 +27,11 @@ function minifyDocsHTML(cb) {
 }
 
 function minifyBundle(cb) {
-	gulp.src('./browser/bundle.js')
+	gulp.src('./dist/browser.js')
 		.pipe(terser())
-		.pipe(gulp.dest('./browser/dist'));
+		.pipe(gulp.dest('./dist/'));
 	cb();
 }
 
-exports.minify = gulp.parallel(minifyDocsJS, minifyDocsHTML, minifyBundle);
+exports.minify = gulp.parallel(minifyDocsJS, minifyDocsHTML/* , minifyBundle */);
 exports.transpile = gulp.parallel(transpile);
