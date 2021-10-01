@@ -33,6 +33,10 @@ var _uniq = _interopRequireDefault(require('./minify/uniq.js'));
 
 var _shuffle = _interopRequireDefault(require('./ran/shuffle.js'));
 
+var _ellipsis = _interopRequireDefault(require('./str/ellipsis.js'));
+
+var _reverse = _interopRequireDefault(require('./str/reverse.js'));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 /**
@@ -53,5 +57,7 @@ Tess.rmFalsey = _rmFalsey['default'];
 Tess.flatten = _flatten['default'];
 Tess.uniq = _uniq['default'];
 Tess.shuffle = _shuffle['default'];
+Tess.ellipsis = _ellipsis['default'];
+Tess.reverse = _reverse['default'];
 var _default = Tess;
 exports['default'] = _default;

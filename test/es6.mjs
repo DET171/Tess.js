@@ -18,8 +18,8 @@ console.log(Tess.pickRan(['hello', 'bye', 'ur not welcome']));
 
 console.log(Tess.compact(`I'm
 a             multiline
-     string!`
-));
+     string!
+`));
 
 console.log(Tess.rmFalsey([undefined, null, NaN, 1, 2, 3, 'hello']));
 
@@ -28,3 +28,7 @@ console.log(Tess.flatten([[[1, [1.1]], 2, 3], [4, 5]]));
 console.log(Tess.uniq([1, 1, 1.1, 2, 2, 3, 4, 5, 5, 5], function(a, b){return a-b}));
 
 console.log(Tess.shuffle([1,2,3,4,5,6]));
+
+console.log(Tess.ellipsis('Hello! I am Joe!', 5, { ellipsis: '---' }));
+
+console.log(Tess.reverse('Hello'));

@@ -18,6 +18,8 @@ import rmFalsey from './minify/rmFalsey.js';
 import flatten from './minify/flatten.js';
 import uniq from './minify/uniq.js';
 import shuffle from './ran/shuffle.js';
+import ellipsis from './str/ellipsis.js';
+import reverse from './str/reverse.js';
 
 Tess.isNil = isNil;
 Tess.atob = atob;
@@ -33,5 +35,7 @@ Tess.rmFalsey = rmFalsey;
 Tess.flatten = flatten;
 Tess.uniq = uniq;
 Tess.shuffle = shuffle;
+Tess.ellipsis = ellipsis;
+Tess.reverse = reverse;
 
 export default Tess;
