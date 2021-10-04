@@ -4,5 +4,10 @@ node_modules/
 docs/
 .parcel-cache
 test/
-browser/.base.js
-browser/bundle.js
+browser/base.js
+gulpfile.js
+.eslint*
+jsdoc.json
+.babelrc
+*.config.js
+*.config.json
