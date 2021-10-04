@@ -1,3 +1,4 @@
+const Buffer = require('buffer/').Buffer;
 /**
 * Encodes a string into Base 64
 *
