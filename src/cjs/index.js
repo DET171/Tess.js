@@ -3,61 +3,58 @@
 Object.defineProperty(exports, '__esModule', {
 	value: true,
 });
-exports['default'] = void 0;
+exports.Tess = void 0;
 
-var _isNil = _interopRequireDefault(require('./misc/isNil.js'));
+var _isNil = require('./misc/isNil.js');
 
-var _arrayify = _interopRequireDefault(require('./misc/arrayify.js'));
+var _arrayify = require('./misc/arrayify.js');
 
-var _wait = _interopRequireDefault(require('./misc/wait.js'));
+var _wait = require('./misc/wait.js');
 
-var _atob = _interopRequireDefault(require('./base64/atob.js'));
+var _atob = require('./base64/atob.js');
 
-var _btoa = _interopRequireDefault(require('./base64/btoa.js'));
+var _btoa = require('./base64/btoa.js');
 
-var _ranBool = _interopRequireDefault(require('./ran/ranBool.js'));
+var _ranBool = require('./ran/ranBool.js');
 
-var _ranInt = _interopRequireDefault(require('./ran/ranInt.js'));
+var _ranInt = require('./ran/ranInt.js');
 
-var _ranFloat = _interopRequireDefault(require('./ran/ranFloat.js'));
+var _ranFloat = require('./ran/ranFloat.js');
 
-var _pickRan = _interopRequireDefault(require('./ran/pickRan.js'));
+var _pickRan = require('./ran/pickRan.js');
 
-var _compact = _interopRequireDefault(require('./minify/compact.js'));
+var _compact = require('./minify/compact.js');
 
-var _rmFalsey = _interopRequireDefault(require('./minify/rmFalsey.js'));
+var _rmFalsey = require('./minify/rmFalsey.js');
 
-var _flatten = _interopRequireDefault(require('./minify/flatten.js'));
+var _flatten = require('./minify/flatten.js');
 
-var _uniq = _interopRequireDefault(require('./minify/uniq.js'));
+var _uniq = require('./minify/uniq.js');
 
-var _shuffle = _interopRequireDefault(require('./ran/shuffle.js'));
+var _shuffle = require('./ran/shuffle.js');
 
-var _ellipsis = _interopRequireDefault(require('./str/ellipsis.js'));
+var _ellipsis = require('./str/ellipsis.js');
 
-var _reverse = _interopRequireDefault(require('./str/reverse.js'));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+var _reverse = require('./str/reverse.js');
 
 /**
 * @copyright MIT Licensed | Copyright © 2021-present Dusty
 */
 var Tess = {};
-Tess.isNil = _isNil['default'];
-Tess.atob = _atob['default'];
-Tess.btoa = _btoa['default'];
-Tess.arrayify = _arrayify['default'];
-Tess.ranBool = _ranBool['default'];
-Tess.ranFloat = _ranFloat['default'];
-Tess.ranInt = _ranInt['default'];
-Tess.pickRan = _pickRan['default'];
-Tess.wait = _wait['default'];
-Tess.compact = _compact['default'];
-Tess.rmFalsey = _rmFalsey['default'];
-Tess.flatten = _flatten['default'];
-Tess.uniq = _uniq['default'];
-Tess.shuffle = _shuffle['default'];
-Tess.ellipsis = _ellipsis['default'];
-Tess.reverse = _reverse['default'];
-var _default = Tess;
-exports['default'] = _default;
+exports.Tess = Tess;
+Tess.isNil = _isNil.isNil;
+Tess.atob = _atob.atob;
+Tess.btoa = _btoa.btoa;
+Tess.arrayify = _arrayify.arrayify;
+Tess.ranBool = _ranBool.ranBool;
+Tess.ranFloat = _ranFloat.ranFloat;
+Tess.ranInt = _ranInt.ranInt;
+Tess.pickRan = _pickRan.pickRan;
+Tess.wait = _wait.wait;
+Tess.compact = _compact.compact;
+Tess.rmFalsey = _rmFalsey.rmFalsey;
+Tess.flatten = _flatten.flatten;
+Tess.uniq = _uniq.uniq;
+Tess.shuffle = _shuffle.shuffle;
+Tess.ellipsis = _ellipsis.ellipsis;
+Tess.reverse = _reverse.reverse;

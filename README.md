@@ -7,14 +7,14 @@ First, install this with NPM:
 ```sh
 npm i --save tess.js
 ```
-JS Modules:
+ES Modules:
 ```js
-import { default as Tess } from 'tess.js';
+import { Tess } from 'tess.js';
 ```
 
 Common JS:
 ```js
-const Tess = require('tess.js').default;
+const Tess = require('tess.js').Tess;
 ```
 
 Browser (ES5):
@@ -25,7 +25,7 @@ Browser (ES5):
 Browser (ESM):
 ```html
 <script type="module">
-import { default as Tess } from 'https://cdn.jsdelivr.net/npm/tess.js/src/esm/index.js';
+import { Tess } from 'https://cdn.jsdelivr.net/npm/tess.js/src/esm/index.js';
 window.Tess = Tess;
 </script>
 <!-- You can now use Tess in other script tags -->
@@ -36,7 +36,7 @@ console.log(Tess.isNil('Hello'));
 ```
 
 # Functions
-See the [docs](https://tess.js.org//)
+See the [docs](https://tess.js.org/)
 
 # License
 MIT

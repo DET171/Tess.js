@@ -14,4 +14,4 @@ const ranFloat = (min, max) => {
 	return Math.random() * (max - min) + min;
 };
 
-export default ranFloat;
+export { ranFloat };

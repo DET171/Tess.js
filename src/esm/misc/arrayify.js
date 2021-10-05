@@ -14,4 +14,4 @@ const arrayify = (value) => {
 	return array;
 };
 
-export default arrayify;
+export { arrayify };

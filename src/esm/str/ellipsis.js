@@ -20,4 +20,4 @@ const ellipsis = (string, position, options) => {
 	return `${newStr}...`;
 };
 
-export default ellipsis;
+export { ellipsis };

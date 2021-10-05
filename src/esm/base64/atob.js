@@ -1,4 +1,4 @@
-const Buffer = require('buffer/').Buffer;
+import { Buffer } from 'buffer';
 /**
 * Encodes a string into Base 64
 *
@@ -12,4 +12,5 @@ const Buffer = require('buffer/').Buffer;
 const atob = (string) => {
 	return Buffer.from(string).toString('base64');
 };
-export default atob;
+
+export { atob };

@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-const utils = require('../src/cjs').default;
+const utils = require('../src/cjs').Tess  ;
 let empty;
 let hello = 'hello';
 let str = `I'm
@@ -23,4 +23,7 @@ test('compact()', () => {
 });
 test('flatten()', () => {
 	expect(utils.flatten([[[1, [1.1]], 2, 3], [4, 5]])[1]).toBe(1.1);
+});
+test('reverse()', () => {
+	expect(utils.reverse('hello')).toBe('olleh');
 });

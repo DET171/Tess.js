@@ -15,4 +15,4 @@ const flatten = (array) => {
 	}, []);
 };
 
-export default flatten;
+export { flatten };

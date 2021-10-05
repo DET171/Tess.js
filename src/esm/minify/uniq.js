@@ -65,4 +65,4 @@ const uniq = (list, compare, sorted) => {
 	return unique_eq(list);
 };
 
-export default uniq;
+export { uniq };

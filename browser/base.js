@@ -1,2 +1,2 @@
-const Tess = require('../src/cjs').default;
+const Tess = require('../src/cjs').Tess;
 window.Tess = Tess;

@@ -3,7 +3,7 @@
 Object.defineProperty(exports, '__esModule', {
 	value: true,
 });
-exports['default'] = void 0;
+exports.isNil = void 0;
 
 /**
 * Returns true if the value is null or undefined
@@ -23,5 +23,4 @@ var isNil = function isNil(value) {
 	if (value == undefined || value == null) return true;else return false;
 };
 
-var _default = isNil;
-exports['default'] = _default;
+exports.isNil = isNil;

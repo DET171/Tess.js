@@ -12,4 +12,4 @@
 
 const rmFalsey = (array) => array.filter(Boolean);
 
-export default rmFalsey;
+export { rmFalsey };

@@ -12,4 +12,4 @@ const ranBool = () => {
 	return Math.random() >= 0.5;
 };
 
-export default ranBool;
+export { ranBool };

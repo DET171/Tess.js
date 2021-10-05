@@ -16,4 +16,4 @@ const compact = (string) => {
 	return string.replace(/\n/gi, ' ').trim().split(/ +/).join(' ');
 };
 
-export default compact;
+export { compact };

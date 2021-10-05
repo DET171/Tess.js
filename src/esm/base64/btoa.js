@@ -1,4 +1,4 @@
-const Buffer = require('buffer/').Buffer;
+import { Buffer } from 'buffer';
 /**
 * Dencodes a Base 64 string
 *
@@ -12,4 +12,4 @@ const Buffer = require('buffer/').Buffer;
 const btoa = (string) => {
 	return Buffer.from(string, 'base64').toString();
 };
-export default btoa;
+export { btoa };

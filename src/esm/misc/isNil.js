@@ -17,4 +17,4 @@ const isNil = (value) => {
 	else return false;
 };
 
-export default isNil;
+export { isNil };
