@@ -6,6 +6,8 @@ const Tess = {};
 
 import { isNil } from './misc/isNil.js';
 import { arrayify } from './misc/arrayify.js';
+import { sparseEach } from './misc/sparseEach.js';
+import { assert } from './misc/assert.js';
 import { wait } from './misc/wait.js';
 import { atob } from './base64/atob.js';
 import { btoa } from './base64/btoa.js';
@@ -24,6 +26,8 @@ import { reverse } from './str/reverse.js';
 Tess.isNil = isNil;
 Tess.atob = atob;
 Tess.btoa = btoa;
+Tess.sparseEach = sparseEach;
+Tess.assert = assert;
 Tess.arrayify = arrayify;
 Tess.ranBool = ranBool;
 Tess.ranFloat = ranFloat;

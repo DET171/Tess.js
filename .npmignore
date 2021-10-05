@@ -11,3 +11,4 @@ jsdoc.json
 .babelrc
 *.config.js
 *.config.json
+.github/

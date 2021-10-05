@@ -2,6 +2,4 @@ coverage/
 out/
 node_modules/
 src/cjs/
-bundle.js
-bundle.min.js
 .parcel-cache

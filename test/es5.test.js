@@ -27,3 +27,6 @@ test('flatten()', () => {
 test('reverse()', () => {
 	expect(utils.reverse('hello')).toBe('olleh');
 });
+test('assert()', () => {
+	expect(utils.assert(typeof {} === 'object')).toBe(true);
+});

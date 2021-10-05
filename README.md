@@ -1,7 +1,14 @@
 [![npm](https://img.shields.io/npm/dt/tess.js?style=flat-square)](https://www.npmjs.com/package/tess.js)
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/tess.js?style=flat-square)
+![Browser bundle size](https://img.shields.io/github/size/DET171/Tess.js/browser/bundle.js?label=Bundle%20file%20size&style=flat-square)
 [![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hy/tess.js?style=flat-square)](https://cdn.jsdelivr.net/npm/tess.js/)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/DET171/Tess.js/CI?style=flat-square)](https://github.com/DET171/Tess.js)
+# Tess.js
+- Supports ES5/CJS ✅
+- Supports ESM/ES6 ✅
+- Browser Support (ES5/ESM) ✅
+- Small size ✅
+
+
 # Usage
 First, install this with NPM:
 ```sh
@@ -36,7 +43,8 @@ console.log(Tess.isNil('Hello'));
 ```
 
 # Functions
-See the [docs](https://tess.js.org/)
+See the [docs](https://tess.js.org/).
+You can also look at [this file](https://github.com/DET171/Tess.js/blob/master/test/es6.mjs) for some possile use cases (ignore the `import` at the top).
 
 # License
 MIT

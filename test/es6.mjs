@@ -2,6 +2,11 @@
 import { Tess } from '../src/esm/index.js';
 let empty;
 let hello = 'hello';
+let a = [];
+a[5] = "five";
+a[10] = "ten";
+a[100000] = "one hundred thousand";
+a.b = "bee";
 
 console.log(Tess.isNil(empty));
 console.log(Tess.arrayify(hello));
@@ -32,3 +37,10 @@ console.log(Tess.shuffle([1,2,3,4,5,6]));
 console.log(Tess.ellipsis('Hello! I am Joe!', 5, { ellipsis: '---' }));
 
 console.log(Tess.reverse('Hello'));
+
+console.log(Tess.sparseEach(a, function(value, index, arr) {
+    console.log("Value at " + index + " is " + value);
+		// arr is the array object
+}));
+
+console.log(Tess.assert(typeof 'object' === 'object', '', false)); // this does not crash the script and does not show any errors
