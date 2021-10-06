@@ -44,3 +44,6 @@ console.log(Tess.sparseEach(a, function(value, index, arr) {
 }));
 
 console.log(Tess.assert(typeof 'object' === 'object', '', false)); // this does not crash the script and does not show any errors
+
+console.log(Tess.beforePos([1, 2, 3, 4, 5, 6, 7, 8], 4));
+console.log(Tess.afterPos([1, 2, 3, 4, 5, 6, 7, 8], 4));

@@ -30,3 +30,7 @@ test('reverse()', () => {
 test('assert()', () => {
 	expect(utils.assert(typeof {} === 'object')).toBe(true);
 });
+test('afterPos() and beforePos()', () => {
+	expect(utils.afterPos([1, 2, 3, 4, 5, 6, 7, 8], 4)).toStrictEqual([6, 7, 8]);
+  expect(utils.beforePos([1, 2, 3, 4, 5, 6, 7, 8], 4)).toStrictEqual([1, 2, 3, 4]);
+});
