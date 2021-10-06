@@ -3,10 +3,9 @@
 [![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hy/tess.js?style=flat-square)](https://cdn.jsdelivr.net/npm/tess.js/)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/DET171/Tess.js/CI?style=flat-square)](https://github.com/DET171/Tess.js)
 # Tess.js
-- Supports ES5/CJS ✅
-- Supports ESM/ES6 ✅
-- Browser Support (ES5/ESM) ✅
-- Small size ✅
+* Supports ES5/CJS ✅
+* Supports ESM/ES6 ✅
+* Browser Support (ES5/ESM) ✅
 
 
 # Usage
