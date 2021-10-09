@@ -39,7 +39,7 @@ const afterPos = (array, position) => {
 * @param {*} el - The element in the array that values will be taken from after
 * @returns Array
 * @example
-* beforePos([1, 2, 3, "hello", "5", 6, 7, 8], "hello")
+* afterEl([1, 2, 3, "hello", "5", 6, 7, 8], "hello")
 */
 
 const afterEl = (array, el) => {
@@ -56,7 +56,7 @@ const afterEl = (array, el) => {
 * @param {number} position - The element in the array that values will be taken from before
 * @returns Array
 * @example
-* beforePos([1, 2, 3, "four", 5, "6", 7, 8], "four")
+* beforeEl([1, 2, 3, "four", 5, "6", 7, 8], "four")
 */
 
 const beforeEl = (array, el) => {
