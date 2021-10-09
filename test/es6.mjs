@@ -47,3 +47,6 @@ console.log(Tess.assert(typeof 'object' === 'object', '', false)); // this does 
 
 console.log(Tess.beforePos([1, 2, 3, 4, 5, 6, 7, 8], 4));
 console.log(Tess.afterPos([1, 2, 3, 4, 5, 6, 7, 8], 4));
+
+console.log(Tess.beforeEl(["1", "2", "3", "four", "5", "6", "7", "8"], "four"));
+console.log(Tess.afterEl(["1", "2", "3", "four", "five", "6", "7", "8"], "five"));
