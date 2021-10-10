@@ -38,3 +38,7 @@ test('afterPos(), beforePos(), afterEl() and beforeEl()', () => {
   expect(utils.afterEl([1, 2, 3, 4, 5, "six", 7, "eight"], "six")).toStrictEqual([7, "eight"]);
 
 });
+test('camel and pascal', () => {
+	expect(utils.camelCase('Hello there')).toBe('helloThere');
+  expect(utils.pascalCase('hello there')).toBe('HelloThere');
+});

@@ -22,6 +22,7 @@ import { flatten } from './minify/flatten.js';
 import { uniq } from './minify/uniq.js';
 import { shuffle } from './ran/shuffle.js';
 import { ellipsis } from './str/ellipsis.js';
+import { camelCase, pascalCase } from './str/pascal-camel.js';
 import { reverse } from './str/reverse.js';
 
 Tess.isNil = isNil;
@@ -41,6 +42,8 @@ Tess.pickRan = pickRan;
 Tess.wait = wait;
 Tess.compact = compact;
 Tess.rmFalsey = rmFalsey;
+Tess.camelCase = camelCase;
+Tess.pascalCase = pascalCase;
 Tess.flatten = flatten;
 Tess.uniq = uniq;
 Tess.shuffle = shuffle;

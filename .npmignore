@@ -12,3 +12,4 @@ jsdoc.json
 *.config.js
 *.config.json
 .github/
+.yarn
