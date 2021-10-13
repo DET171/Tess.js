@@ -1,53 +1,20 @@
-/**
-* @copyright MIT Licensed | Copyright © 2021-present Dusty
-*/
-
-const Tess = {};
-
-import { isNil } from './misc/isNil.js';
-import { arrayify } from './misc/arrayify.js';
-import { sparseEach } from './misc/sparseEach.js';
-import { beforePos, afterPos, afterEl, beforeEl } from './misc/after-before.js';
-import { assert } from './misc/assert.js';
-import { wait } from './misc/wait.js';
-import { atob } from './base64/atob.js';
-import { btoa } from './base64/btoa.js';
-import { ranBool } from './ran/ranBool.js';
-import { ranInt } from './ran/ranInt.js';
-import { ranFloat } from './ran/ranFloat.js';
-import { pickRan } from './ran/pickRan.js';
-import { compact } from './minify/compact.js';
-import { rmFalsey } from './minify/rmFalsey.js';
-import { flatten } from './minify/flatten.js';
-import { uniq } from './minify/uniq.js';
-import { shuffle } from './ran/shuffle.js';
-import { ellipsis } from './str/ellipsis.js';
-import { camelCase, pascalCase } from './str/pascal-camel.js';
-import { reverse } from './str/reverse.js';
-
-Tess.isNil = isNil;
-Tess.atob = atob;
-Tess.btoa = btoa;
-Tess.beforePos = beforePos;
-Tess.afterPos = afterPos;
-Tess.afterEl = afterEl;
-Tess.beforeEl = beforeEl;
-Tess.sparseEach = sparseEach;
-Tess.assert = assert;
-Tess.arrayify = arrayify;
-Tess.ranBool = ranBool;
-Tess.ranFloat = ranFloat;
-Tess.ranInt = ranInt;
-Tess.pickRan = pickRan;
-Tess.wait = wait;
-Tess.compact = compact;
-Tess.rmFalsey = rmFalsey;
-Tess.camelCase = camelCase;
-Tess.pascalCase = pascalCase;
-Tess.flatten = flatten;
-Tess.uniq = uniq;
-Tess.shuffle = shuffle;
-Tess.ellipsis = ellipsis;
-Tess.reverse = reverse;
-
-export { Tess };
+export { isNil } from './misc/isNil.js';
+export { arrayify } from './misc/arrayify.js';
+export { sparseEach } from './misc/sparseEach.js';
+export { beforePos, afterPos, afterEl, beforeEl } from './misc/after-before.js';
+export { assert } from './misc/assert.js';
+export { wait } from './misc/wait.js';
+export { atob } from './base64/atob.js';
+export { btoa } from './base64/btoa.js';
+export { ranBool } from './ran/ranBool.js';
+export { ranInt } from './ran/ranInt.js';
+export { ranFloat } from './ran/ranFloat.js';
+export { pickRan } from './ran/pickRan.js';
+export { compact } from './minify/compact.js';
+export { rmFalsey } from './minify/rmFalsey.js';
+export { flatten } from './minify/flatten.js';
+export { uniq } from './minify/uniq.js';
+export { shuffle } from './ran/shuffle.js';
+export { ellipsis } from './str/ellipsis.js';
+export { camelCase, pascalCase } from './str/pascal-camel.js';
+export { reverse } from './str/reverse.js';

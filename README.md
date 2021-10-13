@@ -15,12 +15,12 @@ npm i --save tess.js
 ```
 ES Modules:
 ```js
-import { Tess } from 'tess.js';
+import * as Tess from 'tess.js'; // get all the named exports
 ```
 
 Common JS:
 ```js
-const Tess = require('tess.js').Tess;
+const Tess = require('tess.js');
 ```
 
 Browser (ES5):
@@ -31,7 +31,7 @@ Browser (ES5):
 Browser (ESM):
 ```html
 <script type="module">
-import { Tess } from 'https://cdn.jsdelivr.net/npm/tess.js/src/esm/index.js';
+import Tess from 'https://cdn.jsdelivr.net/npm/tess.js/src/esm/index.js';
 window.Tess = Tess;
 </script>
 <!-- You can now use Tess in other script tags -->
@@ -42,7 +42,7 @@ console.log(Tess.isNil('Hello'));
 ```
 
 # Functions
-See the [docs](https://tess.js.org/).
+See the [docs](https://tess.js.org/). <br>
 You can also look at [this file](https://github.com/DET171/Tess.js/blob/master/test/es6.mjs) for some possile use cases (ignore the `import` at the top).
 
 # License

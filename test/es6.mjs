@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import { Tess } from '../src/esm/index.js';
+import * as Tess from '../src/esm/index.js';
 let empty;
 let hello = 'hello';
 let a = [];
@@ -43,7 +43,7 @@ console.log(Tess.sparseEach(a, function(value, index, arr) {
 		// arr is the array object
 }));
 
-console.log(Tess.assert(typeof 'object' === 'object', '', false)); // this does not crash the script and does not show any errors
+console.log(Tess.assert(typeof 'object' === 'string'));
 
 console.log(Tess.beforePos([1, 2, 3, 4, 5, 6, 7, 8], 4));
 console.log(Tess.afterPos([1, 2, 3, 4, 5, 6, 7, 8], 4));
@@ -51,4 +51,4 @@ console.log(Tess.afterPos([1, 2, 3, 4, 5, 6, 7, 8], 4));
 console.log(Tess.beforeEl(["1", "2", "3", "four", "5", "6", "7", "8"], "four"));
 console.log(Tess.afterEl(["1", "2", "3", "four", "five", "6", "7", "8"], "five"));
 console.log(Tess.camelCase('Hello there'));
-console.log(Tess.pascalCase('hello there'));
+console.log(Tess.pascalCase('hxello there'));
