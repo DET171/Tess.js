@@ -10,7 +10,7 @@
 		"ecmaVersion": 2021,
 		"sourceType": "module",
 		"babelOptions": {
-			"configFile": "./.babelrc"
+			"configFile": "./.babelrc.json"
 		}
 	},
 	"plugins": [
@@ -27,15 +27,17 @@
 		"handle-callback-err": "off",
 		"indent": ["error", "tab"],
 		"max-nested-callbacks": ["error", { "max": 4 }],
-		"max-statements-per-line": ["error", { "max": 2 }],
+		"max-statements-per-line": ["error", { "max": 20 }],
 		"no-console": "off",
 		"no-empty-function": "error",
 		"no-floating-decimal": "error",
+		"no-fallthrough": "warn",
+		"no-constant-condition": "warn",
 		"no-inline-comments": "error",
 		"no-lonely-if": "error",
 		"no-multi-spaces": "error",
 		"no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1, "maxBOF": 0 }],
-		"no-shadow": ["error", { "allow": ["err", "resolve", "reject"] }],
+		"no-shadow": ["warn", { "allow": ["err", "resolve", "reject"] }],
 		"no-trailing-spaces": ["error"],
 		"object-curly-spacing": ["error", "always"],
 		"prefer-const": "warn",

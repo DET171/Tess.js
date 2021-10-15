@@ -5,3 +5,4 @@ docs/
 *.browser.js
 browser.js
 bundle.js
+coverage/

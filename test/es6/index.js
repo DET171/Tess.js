@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import * as Tess from '../src/esm/index.js';
+import * as Tess from '../../src/esm/index.js';
 let empty;
 let hello = 'hello';
 let a = [];
@@ -51,4 +51,17 @@ console.log(Tess.afterPos([1, 2, 3, 4, 5, 6, 7, 8], 4));
 console.log(Tess.beforeEl(["1", "2", "3", "four", "5", "6", "7", "8"], "four"));
 console.log(Tess.afterEl(["1", "2", "3", "four", "five", "6", "7", "8"], "five"));
 console.log(Tess.camelCase('Hello there'));
-console.log(Tess.pascalCase('hxello there'));
+console.log(Tess.pascalCase('hello there'));
+
+(async function() {
+  await Tess.wait(1500);
+  // await Tess.progressBar(1, 100);
+  // await Tess.wait(100 * 20);
+  await Tess.progressBar(2);
+  await Tess.wait(20 * 80);
+  console.log();
+  Tess.spinner.start();
+  await Tess.wait(1000 * 5);
+  Tess.spinner.stop();
+  Tess.progressBar(1);
+}());

@@ -2,12 +2,11 @@ const gulp = require('gulp');
 const babel = require('gulp-babel');
 const terser = require('gulp-terser');
 const htmlmin = require('gulp-htmlmin');
+const babelrc = require('./.babelrc.json');
 
 function transpile(cb) {
 	gulp.src('./src/esm/**/*.js')
-		.pipe(babel({
-			presets: ['@babel/env'],
-		}))
+		.pipe(babel(babelrc))
 		.pipe(gulp.dest('./src/cjs'));
 	cb();
 }
@@ -28,9 +27,6 @@ function minifyDocsHTML(cb) {
 
 function bundle(cb) {
 	gulp.src('./browser/bundle.js')
-		.pipe(babel({
-			presets: ['@babel/env'],
-		}))
 		.pipe(terser())
 		.pipe(gulp.dest('./browser/'));
 	cb();

@@ -25,13 +25,16 @@ const Tess = require('tess.js');
 
 Browser (ES5):
 ```html
-<script src="https://cdn.jsdelivr.net/npm/tess.js/browser/bundle.js"></script>
+<script async src="https://cdn.jsdelivr.net/npm/tess.js/browser/bundle.js"></script>
 ```
-
+Note: If you're using a very old browser, you may need to include the following in your HTML
+```html
+<script async src="https://polyfill.io/v3/polyfill.min.js?features=Array.isArray,Array.prototype.copyWithin,Array.prototype.fill,Array.prototype.filter,Array.prototype.indexOf,Array.prototype.keys,Array.prototype.lastIndexOf,Array.prototype.reduce,Array.prototype.sort,ArrayBuffer,console,DataView,Function.prototype.bind,Map,Number.isInteger,Object.defineProperty,Object.keys,Object.setPrototypeOf,Promise,Reflect,Reflect.construct,Set,String.prototype.repeat,String.prototype.trim,Symbol,Symbol.for,Symbol.toPrimitive,Uint8Array,WeakMap,WeakSet"></script>
+```
 Browser (ESM):
 ```html
 <script type="module">
-import Tess from 'https://cdn.jsdelivr.net/npm/tess.js/src/esm/index.js';
+import * as Tess from 'https://cdn.jsdelivr.net/npm/tess.js/src/esm/index.js';
 window.Tess = Tess;
 </script>
 <!-- You can now use Tess in other script tags -->
@@ -47,3 +50,6 @@ You can also look at [this file](https://github.com/DET171/Tess.js/blob/master/t
 
 # License
 MIT
+
+# Others
+Vote for functions [here](https://forms.gle/t2tjVfxjUuVb1LVS7)!
