@@ -6,15 +6,21 @@ let spin = true;
 *
 * @since v2.1.1
 * @category console
-* @example
-* spinner.start(); // starts spinner
-* spinner.stop(); // stops spinner
 */
 const spinner = {};
 
+/**
+* spinner#start (Node.js only)
+*
+* @since v2.1.1
+* @category console
+* @example
+* spinner.start() // starts spinner
+*/
+
 spinner.start = async () => {
 	if(!process?.stdout?.write) {
-		console.error('Progress Bar cannot be used here as it relies on process.stdout.write (which the current environment does not have)');
+		console.error('Spinner cannot be used here as it relies on process.stdout.write (which the current environment does not have)');
 		return;
 	}
 	while (spin == true) {
@@ -28,9 +34,18 @@ spinner.start = async () => {
 	}
 };
 
+/**
+* spinner#stop (Node.js only)
+*
+* @since v2.1.1
+* @category console
+* @example
+* spinner.stop() // stops spinner
+*/
+
 spinner.stop = () => {
 	if(!process?.stdout?.write) {
-		console.error('Progress Bar cannot be used here as it relies on process.stdout.write (which the current environment does not have)');
+		console.error('Spinner cannot be used here as it relies on process.stdout.write (which the current environment does not have)');
 		return;
 	}
 	spin = false;

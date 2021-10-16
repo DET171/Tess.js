@@ -47,7 +47,7 @@ console.log(Tess.assert(typeof 'object' === 'string'));
 
 console.log(Tess.beforePos([1, 2, 3, 4, 5, 6, 7, 8], 4));
 console.log(Tess.afterPos([1, 2, 3, 4, 5, 6, 7, 8], 4));
-
+console.log(Tess.ranKey());
 console.log(Tess.beforeEl(["1", "2", "3", "four", "5", "6", "7", "8"], "four"));
 console.log(Tess.afterEl(["1", "2", "3", "four", "five", "6", "7", "8"], "five"));
 console.log(Tess.camelCase('Hello there'));
@@ -65,3 +65,8 @@ console.log(Tess.pascalCase('hello there'));
   Tess.spinner.stop();
   Tess.progressBar(1);
 }());
+
+Tess.markr.info('Hello')
+Tess.markr.success('Hello', ' Congrats! ')
+Tess.markr.error('Parse Error: (29:7)', ' FATAL ERROR ')
+Tess.markr.warn('no-unused-vars (10:8)')

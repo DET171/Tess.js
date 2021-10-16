@@ -47,5 +47,8 @@
     "type": "git",
     "url": "https://github.com/DET171/Tess.js.git"
   },
-  "homepage": "https://tess.js.org/"
+  "homepage": "https://tess.js.org/",
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
 }

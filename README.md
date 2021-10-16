@@ -6,6 +6,7 @@
 * Supports ES5/CJS ✅
 * Supports ESM/ES6 ✅
 * Browser Support (ES5/ESM) ✅
+* Tree-shaking (`import`/`export`) ✅
 
 
 # Usage
