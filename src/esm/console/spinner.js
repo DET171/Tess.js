@@ -1,15 +1,18 @@
 import { wait } from '../misc/wait.js';
+let spin = true;
+
 /**
-* Creates a console spinner (Node.js only)
+* Namespace for console spinner (Node.js only)
 *
 * @since v2.1.1
 * @category console
 * @example
-* spinner.start(); // start spinner
-* spinner.stop(); // stop spinner
+* spinner.start(); // starts spinner
+* spinner.stop(); // stops spinner
 */
-let spin = true;
-const start = async () => {
+const spinner = {};
+
+spinner.start = async () => {
 	if(!process?.stdout?.write) {
 		console.error('Progress Bar cannot be used here as it relies on process.stdout.write (which the current environment does not have)');
 		return;
@@ -25,7 +28,7 @@ const start = async () => {
 	}
 };
 
-const stop = () => {
+spinner.stop = () => {
 	if(!process?.stdout?.write) {
 		console.error('Progress Bar cannot be used here as it relies on process.stdout.write (which the current environment does not have)');
 		return;
@@ -34,6 +37,4 @@ const stop = () => {
 	process.stdout.write('\r');
 };
 
-const cSpinner = { start, stop };
-
-export { cSpinner };
+export { spinner };

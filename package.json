@@ -40,14 +40,12 @@
     "lint:fix": "eslint --fix .",
     "docs": "jsdoc -c ./jsdoc.json -R ./README.md && echo tess.js.org > docs/CNAME",
     "test": "jest",
+    "test:es6": "node test/es6",
     "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/DET171/Tess.js.git"
   },
-  "homepage": "https://tess.js.org/",
-  "dependencies": {
-    "@babel/runtime": "^7.15.4"
-  }
+  "homepage": "https://tess.js.org/"
 }

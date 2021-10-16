@@ -9,7 +9,7 @@ export { btoa } from './base64/btoa.js';
 export { ranBool } from './ran/ranBool.js';
 export { ranInt } from './ran/ranInt.js';
 export { ranFloat } from './ran/ranFloat.js';
-export { cSpinner as spinner } from './console/spinner.js';
+export { spinner } from './console/spinner.js';
 export { pickRan } from './ran/pickRan.js';
 export { compact } from './minify/compact.js';
 export { rmFalsey } from './minify/rmFalsey.js';
