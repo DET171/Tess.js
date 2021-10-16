@@ -1,1 +1,83 @@
-function hideSearchList(){document.getElementById("search-item-ul").style.display="none"}function showSearchList(){document.getElementById("search-item-ul").style.display="block"}function checkClick(e){"search-box-input"!==e.target.id&&(setTimeout((function(){hideSearchList()}),60),window.removeEventListener("click",checkClick))}function search(e,t,n,c){var i={shouldSort:!0,threshold:.4,location:0,distance:100,maxPatternLength:32,minMatchCharLength:1,keys:n},s=Object.assign({},i,t),l=Fuse.createIndex(s.keys,e),a=new Fuse(e,s,l).search(c);console.log(a,a.length),a.length>20&&(a=a.slice(0,20)),console.log(a);var o=document.getElementById("search-item-ul");o.innerHTML="",0===a.length?o.innerHTML+='<li class="p-h-n"> No Result Found </li>':a.forEach((function(e){o.innerHTML+="<li>"+e.item.link+"</li>"}))}function setupSearch(e,t){var n=document.getElementById("search-box-input"),c=["title"];n.addEventListener("keyup",(function(){""!==n.value?(showSearchList(),search(e,t,c,n.value)):hideSearchList()})),n.addEventListener("focus",(function(){showSearchList(),""!==n.value&&search(e,t,c,n.value),window.addEventListener("click",checkClick)}))}
+/* global document */
+function hideSearchList() {
+    document.getElementById('search-item-ul').style.display = 'none';
+}
+
+function showSearchList() {
+    document.getElementById('search-item-ul').style.display = 'block';
+}
+
+function checkClick(e) {
+    if ( e.target.id !== 'search-box-input') {
+        setTimeout(function() {
+            hideSearchList();
+        }, 60);
+
+        /* eslint-disable-next-line */
+        window.removeEventListener('click', checkClick);
+    }
+}
+
+function search(list, options, keys, searchKey) {
+    var defaultOptions = {
+        shouldSort: true,
+        threshold: 0.4,
+        location: 0,
+        distance: 100,
+        maxPatternLength: 32,
+        minMatchCharLength: 1,
+        keys: keys
+    };
+
+    var op = Object.assign({}, defaultOptions, options);
+
+    // eslint-disable-next-line no-undef
+    var searchIndex = Fuse.createIndex(op.keys, list);
+
+    /* eslint-disable-next-line */
+    var fuse = new Fuse(list, op, searchIndex);
+
+    var result = fuse.search(searchKey);
+
+    console.log(result, result.length);
+    if (result.length > 20) { result = result.slice(0, 20); }
+
+    console.log(result);
+    var searchUL = document.getElementById('search-item-ul');
+
+    searchUL.innerHTML = '';
+
+    if (result.length === 0) {
+        searchUL.innerHTML += '<li class="p-h-n"> No Result Found </li>';
+    } else {
+        result.forEach(function(obj) {
+            searchUL.innerHTML += '<li>' + obj.item.link + '</li>';
+        });
+    }
+}
+
+/* eslint-disable-next-line */
+function setupSearch(list, options) {
+    var inputBox = document.getElementById('search-box-input');
+    var keys = ['title'];
+
+    inputBox.addEventListener('keyup', function() {
+        if (inputBox.value !== '') {
+            showSearchList();
+            search(list, options, keys, inputBox.value);
+        }
+        else { hideSearchList(); }
+    });
+
+    inputBox.addEventListener('focus', function() {
+        showSearchList();
+        if (inputBox.value !== '') {
+            search(list, options, keys, inputBox.value);
+        }
+
+        /* eslint-disable-next-line */
+        window.addEventListener('click', checkClick);
+    });
+}
+
+

@@ -8,7 +8,7 @@ import chalk from 'chalk';
 const markr = {};
 /**
 * Can be used instead of `console.log` or `console.info`
-* markr#info
+* markr.info
 *
 * @since v2.2.0
 * @category console
@@ -20,7 +20,7 @@ markr.info = (text, header = ' INFO ') => {
 };
 
 /**
-* markr#success
+* markr.success
 *
 * @since v2.2.0
 * @category console
@@ -32,7 +32,7 @@ markr.success = (text, header = ' SUCCESS ') => {
 };
 
 /**
-* markr#error
+* markr.error
 *
 * @since v2.2.0
 * @category console
@@ -44,7 +44,7 @@ markr.error = (text, header = ' ERROR ') => {
 };
 
 /**
-* markr#warn
+* markr.warn
 *
 * @since v2.2.0
 * @category console
