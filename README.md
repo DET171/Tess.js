@@ -1,3 +1,5 @@
+![Code Style](https://github.com/DET171/eslint-config-berry/raw/master/code-style.svg)
+![npm (tag)](https://img.shields.io/npm/v/tess.js/latest)
 [![npm](https://img.shields.io/npm/dt/tess.js?style=flat-square)](https://www.npmjs.com/package/tess.js)
 ![Browser bundle size](https://img.shields.io/github/size/DET171/Tess.js/browser/bundle.js?label=Bundle%20file%20size&style=flat-square)
 [![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hy/tess.js?style=flat-square)](https://cdn.jsdelivr.net/npm/tess.js/)
