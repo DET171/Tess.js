@@ -1,3 +1,6 @@
 {
-	"extends": "berry/module"
+	"extends": "berry/module",
+	"parserOptions": {
+    "allowImportExportEverywhere": true
+  }
 }
