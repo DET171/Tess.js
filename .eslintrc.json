@@ -2,5 +2,9 @@
 	"extends": "berry/module",
 	"parserOptions": {
     "allowImportExportEverywhere": true
-  }
+  },
+	"rules": {
+		"no-func-assign": "warn",
+		"no-empty-function": "warn"
+	}
 }

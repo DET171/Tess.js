@@ -71,3 +71,11 @@ Tess.markr.success('Hello', ' Congrats! ')
 Tess.markr.error('Parse Error: (29:7)', ' FATAL ERROR ')
 Tess.markr.warn('no-unused-vars (10:8)')
 console.log(Tess.ranKey(20));
+
+const sa = new Tess.StrictArray('object');
+sa.push({
+  name: 'John'
+});
+console.log(sa[0]);
+// uncomment next line to see error thrown
+// sa.push(1)

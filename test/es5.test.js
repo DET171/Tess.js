@@ -42,3 +42,8 @@ test('camel and pascal', () => {
 	expect(Tess.camelCase('Hello there')).toBe('helloThere');
   expect(Tess.pascalCase('hello there')).toBe('HelloThere');
 });
+const numArray = new Tess.StrictArray('number');
+numArray.push(1)
+test('StrictArray()', () => {
+	expect(numArray[0]).toBe(1);
+});
