@@ -1,3 +1,4 @@
+/* eslint-disable no-func-assign */
 import chalk from 'chalk';
 /**
 * Simple wrapper for [chalk](https://www.npmjs.com/package/chalk)
@@ -16,7 +17,7 @@ const markr = {};
 * @param {string} [header= INFO ] - The header of the message
 */
 markr.info = (text, header = ' INFO ') => {
-	if(process?.version) console.log(`${chalk.bgCyan.white.bold(header)}  ${text}`);
+	if(typeof (process) != 'undefined' && typeof (process?.version) != 'undefined') console.log(`${chalk.bgCyan.white.bold(header)}  ${text}`);
 	if(typeof (window) != 'undefined') console.log(`%c${header}`, 'background: #00FFFF; color: white; padding: 2px; border-radius:2px', text);
 };
 
