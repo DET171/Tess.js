@@ -76,6 +76,11 @@ const sa = new Tess.StrictArray('object');
 sa.push({
   name: 'John'
 });
-console.log(sa[0]);
+sa.unshift({
+  name: 'Mary'
+})
+// You cannot change the acceptedTypes property
+// sa.acceptedTypes = 'string';
+console.log(sa);
 // uncomment next line to see error thrown
 // sa.push(1)

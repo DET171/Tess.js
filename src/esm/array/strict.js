@@ -16,19 +16,38 @@ class StrictArray extends Array {
   */
 	constructor(acceptedTypes) {
 		super();
-		this.acceptedTypes = acceptedTypes;
+		Object.defineProperty(this, 'acceptedTypes', {
+			value: acceptedTypes,
+			writable : false,
+			enumerable : true,
+			configurable : false,
+		});
 	}
 	/**
   * Push a value to the array
   * @param {*} el - The value to push to the array
   * @return {array} Returns the array
   */
-	push(el) {
-		if(typeof el == this.acceptedTypes) {
-			this[this.length] = el;
+	push(...el) {
+		for (const item of el) {
+			if(typeof item == this.acceptedTypes) {
+				this[this.length] = item;
+			}
+			else {
+				throw new Error(`The type of the item you tried to push was a ${typeof item}, but ${this.acceptedTypes} was expected`);
+			}
 		}
-		else {
-			throw new Error(`The type of the item you tried to push was a ${typeof el}, but ${this.acceptedTypes} was expected`);
+	}
+	unshift(...el) {
+		for (const item of el) {
+			if(typeof item == this.acceptedTypes) {
+				this.reverse();
+				this[this.length] = item;
+				this.reverse();
+			}
+			else {
+				throw new Error(`The type of the item you tried to push was a ${typeof item}, but ${this.acceptedTypes} was expected`);
+			}
 		}
 	}
 }
