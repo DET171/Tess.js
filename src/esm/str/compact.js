@@ -16,4 +16,9 @@ const compact = (string) => {
 	return string.replace(/\n/gi, ' ').trim().split(/ +/).join(' ');
 };
 
+// alright I've decided not to pollute globals k?
+/* String.prototype.compact = function() {
+	return compact(this);
+}; */
+
 export { compact };

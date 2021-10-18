@@ -47,3 +47,7 @@ numArray.push(1)
 test('StrictArray()', () => {
 	expect(numArray[0]).toBe(1);
 });
+
+test('stdDev()', () => {
+  expect(Tess.stdDev([1, 6, 8, 16, 28])).toBe(9.431860898041277);
+})

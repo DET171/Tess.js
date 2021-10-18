@@ -12,7 +12,7 @@ class StrictArray extends Array {
 	/**
   * Creates a strict array that only accepts one type of element
   * @since v2.4.0
-  * @param {acceptedTypes} string - The type of element that the array should accept
+  * @param {string} acceptedTypes - The type of element that the array should accept
   */
 	constructor(acceptedTypes) {
 		super();

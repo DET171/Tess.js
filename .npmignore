@@ -8,7 +8,7 @@ browser/base.js
 gulpfile.js
 .eslint*
 jsdoc.json
-.babelrc
+.babelrc*
 *.config.js
 *.config.json
 .github/
