@@ -38,6 +38,11 @@ class StrictArray extends Array {
 			}
 		}
 	}
+	/**
+  * Push a value to the front of the array
+  * @param {*} el - The value to push to the array
+  * @return {array} Returns the array
+  */
 	unshift(...el) {
 		for (const item of el) {
 			if(typeof item == this.acceptedTypes) {
