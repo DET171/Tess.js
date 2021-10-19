@@ -55,3 +55,7 @@ test('stdDev()', () => {
 test('isString()', () => {
   expect(Tess.isString('hello')).toBe(true);
 })
+
+test('Class Calculator ', () => {
+  expect(new Tess.Calculator().calculate("min(-1,0)+((sqrt(16)+(-4+7)!*---4)/2)^2^3")).toBe(99999999);
+})
