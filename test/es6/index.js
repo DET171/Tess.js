@@ -88,3 +88,5 @@ console.log(sa);
 
 const str = 'Hello                                   lol';
 console.log(str.compact());
+
+console.log(Tess.isString('Hello'));

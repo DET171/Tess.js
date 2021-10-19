@@ -5,6 +5,7 @@
   },
 	"rules": {
 		"no-func-assign": "warn",
-		"no-empty-function": "warn"
+		"no-empty-function": "warn",
+		"no-unsafe-finally": "warn"
 	}
 }

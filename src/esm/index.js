@@ -24,3 +24,5 @@ export { ellipsis } from './str/ellipsis.js';
 export { camelCase, pascalCase } from './str/pascal-camel.js';
 export { reverse } from './str/reverse.js';
 export { progressBar } from './console/bar.js';
+export { isString } from './str/isString.js';
+export { Collection } from './array/collection.js';

@@ -51,3 +51,7 @@ test('StrictArray()', () => {
 test('stdDev()', () => {
   expect(Tess.stdDev([1, 6, 8, 16, 28])).toBe(9.431860898041277);
 })
+
+test('isString()', () => {
+  expect(Tess.isString('hello')).toBe(true);
+})
