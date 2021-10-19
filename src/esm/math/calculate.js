@@ -60,7 +60,7 @@ class Calculator {
 	* Calculates an expression.
 	* @example
 	* const calculator = new Calculator();
-	* calculator.calculate(min(-1,0)+((sqrt(16)+(-4+7)!*---4)/2)^2^3)
+	* calculator.calculate("min(-1,0)+((sqrt(16)+(-4+7)!*---4)/2)^2^3")
 	*/
 	calculate(expression) {
 		let match;
@@ -71,7 +71,7 @@ class Calculator {
 				values.push(op.f(...[].concat(...values.splice(-op.argCount))));
 				return op.precedence;
 			},
-			error = msg => {
+			error = (msg) => {
 				const notation = match ? match.index : expression.length;
 				return `${msg} at ${notation}:\n${expression}\n${' '.repeat(notation)}^`;
 			},

@@ -86,7 +86,10 @@ console.log(sa);
 // uncomment next line to see error thrown
 // sa.push(1)
 
-const str = 'Hello                                   lol';
-console.log(str.compact());
+// no polluting of globals
+// const str = 'Hello                                   lol';
+// console.log(str.compact());
 
 console.log(Tess.isString('Hello'));
+
+console.log(Tess.m(1, { to: 'yd' }));

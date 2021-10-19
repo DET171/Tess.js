@@ -18,7 +18,7 @@ const markr = {};
 */
 markr.info = (text, header = ' INFO ') => {
 	if(typeof (process) != 'undefined' && typeof (process?.version) != 'undefined') console.log(`${chalk.bgCyan.white.bold(header)}  ${text}`);
-	if(typeof (window) != 'undefined') console.log(`%c${header}`, 'background: #00FFFF; color: white; padding: 2px; border-radius:2px', text);
+	if(typeof (window) != 'undefined') console.log(`%c  ℹ${header}`, 'background: #00FFFF; color: white; padding: 2px; border-radius:2px', text);
 };
 
 /**
@@ -31,7 +31,7 @@ markr.info = (text, header = ' INFO ') => {
 */
 markr.success = (text, header = ' SUCCESS ') => {
 	if(typeof (process) != 'undefined' && typeof (process?.version) != 'undefined') console.log(`${chalk.bgGreen.white.bold(header)}  ${text}`);
-	if(typeof (window) != 'undefined') console.log(`%c${header}`, 'background: #14eb00; color: white; padding: 2px; border-radius:2px', text);
+	if(typeof (window) != 'undefined') console.log(`%c ✅${header}`, 'background: #14eb00; color: white; padding: 2px; border-radius:2px', text);
 };
 
 /**
@@ -44,7 +44,7 @@ markr.success = (text, header = ' SUCCESS ') => {
 */
 markr.error = (text, header = ' ERROR ') => {
 	if(typeof (process) != 'undefined' && typeof (process.version) != 'undefined') console.log(`${chalk.bgRed.white.bold(header)}  ${text}`);
-	if(typeof (window) != 'undefined') console.log(`%c${header}`, 'background: #ff0000; color: white; padding: 2px; border-radius:2px', text);
+	if(typeof (window) != 'undefined') console.log(`%c ❌${header}`, 'background: #ff0000; color: white; padding: 2px; border-radius:2px', text);
 };
 
 /**
@@ -57,7 +57,7 @@ markr.error = (text, header = ' ERROR ') => {
 */
 markr.warn = (text, header = ' WARNING ') => {
 	if(typeof (process) != 'undefined' && typeof (process.version) != 'undefined') console.log(`${chalk.bgYellow.white.bold(header)}  ${text}`);
-	if(typeof (window) != 'undefined') console.log(`%c${header}`, 'background: #ffcc00; color: white; padding: 2px; border-radius:2px', text);
+	if(typeof (window) != 'undefined') console.log(`%c ⚠${header}`, 'background: #ffcc00; color: white; padding: 2px; border-radius:2px', text);
 };
 
 export { markr };

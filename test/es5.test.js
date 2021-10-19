@@ -59,3 +59,7 @@ test('isString()', () => {
 test('Class Calculator ', () => {
   expect(new Tess.Calculator().calculate("min(-1,0)+((sqrt(16)+(-4+7)!*---4)/2)^2^3")).toBe(99999999);
 })
+
+test('m()', () => {
+  expect(Tess.m(1, { to: 'yd' })).toBe(1.09361);
+})
