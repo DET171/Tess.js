@@ -1,13 +1,14 @@
 export { isNil } from './misc/isNil.js';
 export { arrayify } from './misc/arrayify.js';
-export { sparseEach } from './misc/sparseEach.js';
-export { beforePos, afterPos, afterEl, beforeEl } from './misc/after-before.js';
+export { sparseEach } from './array/sparseEach.js';
+export { beforePos, afterPos, afterEl, beforeEl } from './array/after-before.js';
+export { diff } from './array/difference.js';
 export { assert } from './misc/assert.js';
 export { wait } from './misc/wait.js';
 export { atob } from './base64/atob.js';
 export { markr } from './console/markr.js';
 export { btoa } from './base64/btoa.js';
-export { ranKey } from './misc/ranKey.js';
+export { ranKey } from './ran/ranKey.js';
 export { ranBool } from './ran/ranBool.js';
 export { ranInt } from './ran/ranInt.js';
 export { ranFloat } from './ran/ranFloat.js';

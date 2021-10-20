@@ -43,7 +43,6 @@ const m = (metres, { to } = { to: 'km' }) => {
 			return this['mile'];
 		},
 	};
-	console.log(to);
 	return metres * mConversions[to];
 };
 

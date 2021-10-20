@@ -63,3 +63,7 @@ test('Class Calculator ', () => {
 test('m()', () => {
   expect(Tess.m(1, { to: 'yd' })).toBe(1.09361);
 })
+
+test('diff()', () => {
+  expect(Tess.diff([1, 2, 3], [1, 2, 5, 7])).toStrictEqual([3, 5, 7]);
+})
