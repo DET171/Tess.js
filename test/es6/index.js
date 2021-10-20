@@ -95,3 +95,6 @@ console.log(Tess.isString('Hello'));
 console.log(Tess.m(1, { to: 'yd' }));
 
 console.log(Tess.diff([1, 2, 3], [1, 2, 5, 7]));
+console.log(Tess.typeOf(null));
+
+console.log(Tess.chunk(['a', 'b', 'c', 'd'], 3));

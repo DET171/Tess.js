@@ -1,7 +1,9 @@
 export { isNil } from './misc/isNil.js';
 export { arrayify } from './misc/arrayify.js';
+export { typeOf } from './misc/typeOf.js';
 export { sparseEach } from './array/sparseEach.js';
 export { beforePos, afterPos, afterEl, beforeEl } from './array/after-before.js';
+export { chunk } from './array/chunk.js';
 export { diff } from './array/difference.js';
 export { assert } from './misc/assert.js';
 export { wait } from './misc/wait.js';

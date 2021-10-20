@@ -67,3 +67,7 @@ test('m()', () => {
 test('diff()', () => {
   expect(Tess.diff([1, 2, 3], [1, 2, 5, 7])).toStrictEqual([3, 5, 7]);
 })
+
+test('chunk()', () => {
+  expect(Tess.chunk(['a', 'b', 'c', 'd'], 3)).toStrictEqual([['a', 'b', 'c'], ['d']])
+})
