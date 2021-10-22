@@ -98,3 +98,10 @@ console.log(Tess.diff([1, 2, 3], [1, 2, 5, 7]));
 console.log(Tess.typeOf(null));
 
 console.log(Tess.chunk(['a', 'b', 'c', 'd'], 3));
+
+const map = new Map([
+  ['foo', 'bar'],
+  ['baz', 42]
+]);
+const obj = Tess.toJSON(map);
+console.log(obj);

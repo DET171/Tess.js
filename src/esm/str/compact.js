@@ -13,7 +13,7 @@
 */
 
 const compact = (string) => {
-	return string.replace(/\n/gi, ' ').trim().split(/ +/).join(' ');
+	return string.replace(/\n/gi, ' ').trim().replace(/ +/g, ' ');
 };
 
 // alright I've decided not to pollute globals k?
