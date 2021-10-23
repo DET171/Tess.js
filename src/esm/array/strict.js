@@ -18,9 +18,9 @@ class StrictArray extends Array {
 		super();
 		Object.defineProperty(this, 'acceptedTypes', {
 			value: acceptedTypes,
-			writable : false,
-			enumerable : true,
-			configurable : false,
+			writable: false,
+			enumerable: true,
+			configurable: false,
 		});
 	}
 	/**

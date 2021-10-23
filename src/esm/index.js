@@ -24,6 +24,7 @@ export { uniq } from './array/uniq.js';
 export { shuffle } from './ran/shuffle.js';
 export { StrictArray } from './array/strict.js';
 export { stdDev } from './math/standard-deviation.js';
+export { roman } from './math/roman.js';
 export { ellipsis } from './str/ellipsis.js';
 export { camelCase, pascalCase } from './str/pascal-camel.js';
 export { reverse } from './str/reverse.js';

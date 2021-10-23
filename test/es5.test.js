@@ -71,3 +71,10 @@ test('diff()', () => {
 test('chunk()', () => {
   expect(Tess.chunk(['a', 'b', 'c', 'd'], 3)).toStrictEqual([['a', 'b', 'c'], ['d']])
 })
+
+test('roman()', () => {
+  expect(Tess.roman('IV')).toBe(4);
+  expect(Tess.roman(10)).toBe('X');
+  expect(Tess.roman('MMXXI')).toBe(2021);
+  expect(Tess.roman(4027)).toBe('MMMMXXVII');
+})

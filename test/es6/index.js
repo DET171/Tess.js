@@ -105,3 +105,6 @@ const map = new Map([
 ]);
 const obj = Tess.toJSON(map);
 console.log(obj);
+
+console.log(Tess.roman('IX'), Tess.roman('VII'));
+console.log(Tess.roman(100));
