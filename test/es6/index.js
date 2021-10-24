@@ -108,3 +108,6 @@ console.log(obj);
 
 console.log(Tess.roman('IX'), Tess.roman('VII'));
 console.log(Tess.roman(100));
+
+console.log(Tess.deMorse('... --- ... / .... . .-.. .--.'));
+console.log(Tess.toMorse('oops I spilled some milk'))

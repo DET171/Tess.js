@@ -78,3 +78,9 @@ test('roman()', () => {
   expect(Tess.roman('MMXXI')).toBe(2021);
   expect(Tess.roman(4027)).toBe('MMMMXXVII');
 })
+
+test('toMorse() & deMorse()', () => {
+  expect(Tess.deMorse(Tess.toMorse('hello'))).toBe('hello');
+  expect(Tess.deMorse('... --- ... / .... . .-.. .--.')).toBe('sos help')
+  expect(Tess.toMorse('oops I spilled milk')).toBe('--- --- .--. ... / .. / ... .--. .. .-.. .-.. . -.. / -- .. .-.. -.-')
+})
