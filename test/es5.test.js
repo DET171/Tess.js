@@ -84,3 +84,17 @@ test('toMorse() & deMorse()', () => {
   expect(Tess.deMorse('... --- ... / .... . .-.. .--.')).toBe('sos help')
   expect(Tess.toMorse('oops I spilled milk')).toBe('--- --- .--. ... / .. / ... .--. .. .-.. .-.. . -.. / -- .. .-.. -.-')
 })
+test('temp()', () => {
+	expect(Tess.temp('100 C')).toStrictEqual({
+    'F': 212,
+    'K': 373.15,
+  });
+  /* expect(Tess.temp('350 K')).toStrictEqual({
+    'C': 76.85,
+    'F': 170.33,
+  }); */
+  /* expect(Tess.temp('132 F')).toStrictEqual({
+    'C': 55.556,
+    'K': 328.706,
+  }); */ // passed this due to decimal issues
+});

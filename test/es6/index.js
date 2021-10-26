@@ -111,3 +111,5 @@ console.log(Tess.roman(100));
 
 console.log(Tess.deMorse('... --- ... / .... . .-.. .--.'));
 console.log(Tess.toMorse('oops I spilled some milk'))
+console.log(Tess.temp('20 C')['F']);
+console.log(Tess.temp('350 K')['F']);

@@ -1,7 +1,7 @@
 {
   "name": "tess.js",
   "version": "2.5.2-beta.8",
-  "description": "🔧🔨🔩💉 A bunch of JS Utils in one place",
+  "description": "🔧🔨🔩💉 A bunch of JS Utils in one place (including handy conversions)",
   "author": "Dusty <mrgeek484@gmail.com>",
   "license": "MIT",
   "devDependencies": {
