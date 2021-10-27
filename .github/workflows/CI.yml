@@ -16,8 +16,8 @@ jobs:
 
     strategy:
       matrix:
-        os: [windows-latest]
-        node: [16]
+        os: [ubuntu-latest]
+        node: [16, 17]
 
     steps:
       - name: Checkout 🛎
@@ -29,10 +29,5 @@ jobs:
           node-version: ${{ matrix.node }}
           check-latest: true
 
-      - name: Install dependencies 👨🏻‍💻
+      - name: Run CI 👨🏻‍💻
         run: npm ci
-
-      - name: publish code coverage to code-climate (duh)
-        uses: paambaati/codeclimate-action@v2.7.5
-        env:
-          CC_TEST_REPORTER_ID: facb5b98af3794c021f62d4a3a46682fbd9c4cbec195e229b3a3753b38954107
