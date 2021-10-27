@@ -62,6 +62,7 @@ test('Class Calculator ', () => {
 
 test('m()', () => {
   expect(Tess.m(1, { to: 'yd' })).toBe(1.09361);
+  expect(Tess.m('1 km', { to: 'm'})).toBe(1000)
 })
 
 test('diff()', () => {

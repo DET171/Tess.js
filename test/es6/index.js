@@ -67,10 +67,10 @@ console.log(Tess.pascalCase('hello there'));
   Tess.progressBar(1);
 }());
 
-Tess.markr.info('Hello')
-Tess.markr.success('Hello', ' Congrats! ')
-Tess.markr.error('Parse Error: (29:7)', ' FATAL ERROR ')
-Tess.markr.warn('no-unused-vars (10:8)')
+Tess.markr().info('Hello')
+Tess.markr().success('Hello', ' Congrats! ')
+Tess.markr().error('Parse Error: (29:7)', ' FATAL ERROR ')
+Tess.markr().warn('no-unused-vars (10:8)')
 console.log(Tess.ranKey(20));
 
 const sa = new Tess.StrictArray('object');
@@ -92,7 +92,7 @@ console.log(sa);
 
 console.log(Tess.isString('Hello'));
 
-console.log(Tess.m(1, { to: 'yd' }));
+console.log(Tess.m('1 km', { to: 'm' }));
 
 console.log(Tess.diff([1, 2, 3], [1, 2, 5, 7]));
 console.log(Tess.typeOf(null));
