@@ -35,7 +35,7 @@
   },
   "scripts": {
     "prebuild": "npm run lint",
-    "build": "gulp transpile && echo {\"type\": \"commonjs\"} > src/cjs/package.json && npm run bundle && npm run docs && gulp minify",
+    "build": "gulp transpile && bash echoCJS.sh && npm run bundle && npm run docs && gulp minify",
     "bundle": "esbuild browser/base.js --bundle --outfile=browser/bundle.js && prepack browser/bundle.js --out browser/bundle.js --compatibility browser",
     "postbuild": "npm run lint:fix && npm run test",
     "lint": "eslint .",
