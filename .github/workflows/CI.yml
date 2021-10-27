@@ -32,10 +32,7 @@ jobs:
       - name: Install dependencies 👨🏻‍💻
         run: npm ci
 
-      - name: Test & publish code coverage
-        uses: paambaati/codeclimate-action@v3
+      - name: publish code coverage to code-climate (duh)
+        uses: paambaati/codeclimate-action@v2.7.5
         env:
           CC_TEST_REPORTER_ID: facb5b98af3794c021f62d4a3a46682fbd9c4cbec195e229b3a3753b38954107
-        with:
-          coverageLocations: ./coverage
-          debug: true
