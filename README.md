@@ -6,8 +6,9 @@
 ![Browser bundle size](https://img.shields.io/github/size/DET171/Tess.js/browser/bundle.js?label=Bundle%20file%20size&style=flat-square)
 [![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hy/tess.js?style=flat-square)](https://cdn.jsdelivr.net/npm/tess.js/)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/DET171/Tess.js/CI?style=flat-square)](https://github.com/DET171/Tess.js)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FDET171%2FTess.js.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FDET171%2FTess.js?ref=badge_shield)
-*Look don't blame me for the low test coverage; blame Babel*
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FDET171%2FTess.js.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FDET171%2FTess.js?ref=badge_shield) <br>
+
+*Look don't blame me for low test coverage; blame Babel*
 # Tess.js
 * Supports ES5/CJS ✅
 * Supports ESM/ES6 ✅
