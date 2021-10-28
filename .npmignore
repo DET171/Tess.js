@@ -13,3 +13,4 @@ jsdoc.json
 *.config.json
 .github/
 .yarn
+echoCJS.sh

@@ -13,7 +13,7 @@
 * m(1000, { to: 'km' }) // '1 km'
 */
 
-const m = (val, { to } = { to: 'km' }) => {
+const m = (val, to = 'km') => {
 	const mConversions = {
 		'km': 0.001,
 		'cm': 100,
@@ -49,7 +49,7 @@ const m = (val, { to } = { to: 'km' }) => {
 	}
 	if (typeof val === 'string') {
 		const vals = val.split(/ +/);
-		return vals[0] / mConversions[vals[1]] * mConversions[to] ?? NaN;
+		return parseFloat(vals[0]) / mConversions[vals[1]] * mConversions[to] ?? NaN;
 	}
 };
 

@@ -92,7 +92,7 @@ console.log(sa);
 
 console.log(Tess.isString('Hello'));
 
-console.log(Tess.m('1 km', { to: 'm' }));
+console.log(Tess.m('1 km', 'm'));
 
 console.log(Tess.diff([1, 2, 3], [1, 2, 5, 7]));
 console.log(Tess.typeOf(null));
@@ -113,3 +113,5 @@ console.log(Tess.deMorse('... --- ... / .... . .-.. .--.'));
 console.log(Tess.toMorse('oops I spilled some milk'))
 console.log(Tess.temp('20 C')['F']);
 console.log(Tess.temp('350 K')['F']);
+console.log(Tess.weight('10 lb', 'oz'))
+console.log(Tess.weight(10, 'lb'));

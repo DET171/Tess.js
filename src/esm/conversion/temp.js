@@ -14,7 +14,7 @@
 
 const temp = (temperature) => {
 	temperature = temperature.toUpperCase().split(/ +/);
-	const tem = parseInt(temperature[0]);
+	const tem = parseFloat(temperature[0]);
 	if(temperature[1] === 'C') {
 		return {
 			'F': tem * 9 / 5 + 32,
