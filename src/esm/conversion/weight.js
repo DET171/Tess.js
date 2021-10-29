@@ -5,13 +5,13 @@
 * @since v2.5.7
 * @category Conversion
 * @param {string} weight - The weight to convert
-* @param {string} to - The unit to convert the weight to
+* @param {string} [to=g] - The unit to convert the weight to
 * @returns number
 * @example
 * Tess.weight()
 */
 
-const weight = (mass, to) => {
+const weight = (mass, to = 'g') => {
 	const convs = {
 		'kg': 1,
 		'lb': 2.20462,

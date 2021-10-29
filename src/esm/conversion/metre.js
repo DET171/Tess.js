@@ -2,15 +2,14 @@
 * Converts metres to a different unit or vice-versa
 *
 * @since v2.5.2-beta.3
-* @category Conversion/Math
+* @category Conversion
 * @param {number} metres - The amount to convert
-* @param {object} options - The options to apply
-* @param {string} [options.to=km] - What the metres should be converted to
+* @param {string} [to=km] - What the metres should be converted to
 * Accepted units for options.km: <br>
 * km, cm, mm, um, nm, ft, yard, miles, inch, m
 * @returns string
 * @example
-* m(1000, { to: 'km' }) // '1 km'
+* m(1000, 'g') // '1 km'
 */
 
 const m = (val, to = 'km') => {
