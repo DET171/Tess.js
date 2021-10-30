@@ -9,7 +9,7 @@
 * m, s, h, ms, d, y, us (microsecond), w, mth (month)
 * @returns string
 * @example
-* m(1000, 'h') // '1 km'
+* time('2 y', 'mth') // 24
 */
 const time = (val, to = 'ms') => {
 	const convs = {
