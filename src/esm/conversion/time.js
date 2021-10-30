@@ -1,12 +1,12 @@
 /**
 * Converts a given time. If the given time is a number, it will be interpreted as minutes.
+* Accepted units: <br>
+* m, s, h, ms, d, y, us (microsecond), w, mth (month)
 *
 * @since v2.5.8
 * @category Conversion
 * @param {number} metres - The amount to convert
 * @param {string} [to=ms] - What the time should be converted to
-* Accepted units: <br>
-* m, s, h, ms, d, y, us (microsecond), w, mth (month)
 * @returns string
 * @example
 * time('2 y', 'mth') // 24

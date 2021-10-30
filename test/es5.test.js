@@ -103,3 +103,8 @@ test('temp()', () => {
 test('time()', () => {
   expect(Tess.time('2000 s', 'm')).toBe(100 / 3)
 })
+
+test('rgbToHex() & hexToRgb()', () => {
+  expect(Tess.rgbToHex(255, 100, 200)).toBe('#ff64c8');
+  expect(Tess.hexToRgb('#ff64c8')).toBe('255, 100, 200');
+})

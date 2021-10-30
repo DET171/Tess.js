@@ -117,3 +117,5 @@ console.log(Tess.weight(10, 'lb'));
 console.log(Tess.time('10 s', 'm'));
 console.log(Tess.time('1 y', 'd'));
 console.log(Tess.time('2 y', 'mth'));
+console.log(Tess.rgbToHex(255, 100, 200));
+console.log(Tess.hexToRgb('#ff64c8'));

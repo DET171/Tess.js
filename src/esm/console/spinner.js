@@ -19,7 +19,7 @@ const spinner = {};
 */
 
 spinner.start = async () => {
-	if(!process?.stdout?.write) {
+	if(typeof process === 'undefined') {
 		console.error('Spinner cannot be used here as it relies on process.stdout.write (which the current environment does not have)');
 		return;
 	}
@@ -44,7 +44,7 @@ spinner.start = async () => {
 */
 
 spinner.stop = () => {
-	if(!process?.stdout?.write) {
+	if(typeof process === 'undefined') {
 		console.error('Spinner cannot be used here as it relies on process.stdout.write (which the current environment does not have)');
 		return;
 	}
