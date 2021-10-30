@@ -9,7 +9,7 @@
 * km, cm, mm, um, nm, ft, yard, miles, inch, m
 * @returns string
 * @example
-* m(1000, 'g') // '1 km'
+* m('1 km', 'm') // 1000
 */
 
 const m = (val, to = 'km') => {
