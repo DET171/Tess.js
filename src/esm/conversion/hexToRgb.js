@@ -1,7 +1,7 @@
 /**
 * Converts an Hexadecimal color code to RGB
 *
-* @since v2.8.0
+* @since v2.9.0
 * @category Conversion
 * @param {string} hex - The hexadecimal color code
 * @returns string

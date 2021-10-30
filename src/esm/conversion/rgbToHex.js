@@ -6,7 +6,7 @@ const colorToHex = (color) => {
 /**
 * Converts an RGB color code to a hexadecimal string
 *
-* @since v2.8.0
+* @since v2.9.0
 * @category Conversion
 * @param {number} red - The amount of red
 * @param {number} green - The amount of green
