@@ -5,7 +5,7 @@
 * @category Conversion
 * @param {number} metres - The amount to convert
 * @param {string} [to=km] - What the metres should be converted to
-* Accepted units for options.km: <br>
+* Accepted units: <br>
 * km, cm, mm, um, nm, ft, yard, miles, inch, m
 * @returns string
 * @example
@@ -44,11 +44,11 @@ const m = (val, to = 'km') => {
 		},
 	};
 	if (typeof val === 'number') {
-		return val * mConversions[to];
+		return val * (mConversions[to]);
 	}
 	if (typeof val === 'string') {
 		const vals = val.split(/ +/);
-		return parseFloat(vals[0]) / mConversions[vals[1]] * mConversions[to] ?? NaN;
+		return parseFloat(vals[0]) / (mConversions[vals[1]]) * (mConversions[to]);
 	}
 };
 

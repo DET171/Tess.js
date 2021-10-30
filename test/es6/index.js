@@ -14,7 +14,6 @@ console.log(Tess.ranInt(3, 10));
 console.log(Tess.ranFloat(10, 12));
 console.log(Tess.ranBool());
 console.log(Tess.pickRan(['hello', 'bye', 'ur not welcome']));
-
 (async function() {
   console.log('Hi');
   await Tess.wait(1000)
@@ -115,3 +114,6 @@ console.log(Tess.temp('20 C')['F']);
 console.log(Tess.temp('350 K')['F']);
 console.log(Tess.weight('10 lb', 'oz'))
 console.log(Tess.weight(10, 'lb'));
+console.log(Tess.time('10 s', 'm'));
+console.log(Tess.time('1 y', 'd'));
+console.log(Tess.time('2 y', 'mth'));

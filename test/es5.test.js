@@ -99,3 +99,7 @@ test('temp()', () => {
     'K': 328.706,
   }); */ // passed this due to decimal issues
 });
+
+test('time()', () => {
+  expect(Tess.time('2000 s', 'm')).toBe(100 / 3)
+})

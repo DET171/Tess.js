@@ -33,6 +33,7 @@ export { isString } from './str/isString.js';
 export { Collection } from './array/collection.js';
 export { Calculator } from './math/calculate.js';
 export { m } from './conversion/metre.js';
+export { time } from './conversion/time.js';
 export { weight } from './conversion/weight.js';
 export { temp } from './conversion/temp.js';
 export { toMorse, deMorse } from './conversion/morse.js';

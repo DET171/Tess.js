@@ -8,7 +8,7 @@
 * @param {string} [to=g] - The unit to convert the weight to
 * @returns number
 * @example
-* Tess.weight()
+* Tess.weight('10 kg', 'g')
 */
 
 const weight = (mass, to = 'g') => {

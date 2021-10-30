@@ -1,6 +1,6 @@
 /* eslint-disable no-cond-assign */
 /**
-* Converts a number to/from Roman Numerals. If the argument received is a string, it will be converted to a number. If the argument received is a number, it will be converted to a string.
+* Converts a number to/from Roman Numerals. If the argument received is a string, it will be converted to a number. If the argument received is a number, it will be converted to a roman numeral.
 *
 * @since v2.5.2-beta.7
 * @category Math
