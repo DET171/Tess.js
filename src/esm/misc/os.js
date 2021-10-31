@@ -6,8 +6,8 @@ import { release, arch } from 'os';
 * @category Misc
 * @returns String
 * @example
-* getOS(); // for Nodejs
-* await getOS(); // for browser
+* await getOS(); // for Chrome 95+ and MS Edge 94+
+* getOS(); // for all other use cases
 */
 
 const getOS = () => {
