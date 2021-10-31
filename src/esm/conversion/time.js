@@ -5,7 +5,7 @@
 *
 * @since v2.5.8
 * @category Conversion
-* @param {number} metres - The amount to convert
+* @param {number | string} time - The amount to convert
 * @param {string} [to=ms] - What the time should be converted to
 * @returns string
 * @example

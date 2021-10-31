@@ -2,6 +2,7 @@ export { isNil } from './misc/isNil.js';
 export { arrayify } from './misc/arrayify.js';
 export { typeOf } from './misc/typeOf.js';
 export { sparseEach } from './array/sparseEach.js';
+export { includes } from './array/includes.js';
 export { toJSON } from './array/toJSON.js';
 export { beforePos, afterPos, afterEl, beforeEl } from './array/after-before.js';
 export { chunk } from './array/chunk.js';
