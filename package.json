@@ -11,6 +11,7 @@
     "@babel/preset-env": "^7.15.6",
     "buffer": "^6.0.3",
     "clean-jsdoc-theme": "^3.2.8",
+    "core-js": "^3.19.0",
     "esbuild": "^0.13.3",
     "eslint": "^7.32.0",
     "eslint-config-berry": "^0.15.5",
@@ -51,6 +52,7 @@
   },
   "homepage": "https://tess.js.org/",
   "dependencies": {
-    "chalk": "^4.1.2"
+    "chalk": "^4.1.2",
+    "os": "^0.1.2"
   }
 }

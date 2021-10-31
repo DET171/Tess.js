@@ -27,6 +27,7 @@ function minifyDocsHTML(cb) {
 
 function bundle(cb) {
 	gulp.src('./browser/bundle.js')
+		// .pipe(babel(babelrc))
 		.pipe(terser())
 		.pipe(gulp.dest('./browser/'));
 	cb();

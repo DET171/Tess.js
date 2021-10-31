@@ -123,3 +123,5 @@ console.log(Tess.hexToRgb('#ff64c8'));
 
 console.log(Tess.includes(5, [[[[[1,3,5]]],2]]))
 console.log(Tess.includes(5, [[[[[1,3,4]]],2]]))
+
+console.log(Tess.getOS())
