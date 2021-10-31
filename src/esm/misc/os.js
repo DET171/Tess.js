@@ -6,7 +6,7 @@ import { release, arch } from 'os';
 * @category Misc
 * @returns String
 * @example
-* await getOS();
+* getOS();
 */
 
 const getOS = () => {
