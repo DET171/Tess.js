@@ -1,4 +1,5 @@
 import { release, arch } from 'os';
+import { getBrowser } from './browser.js';
 /**
 * Find the OS information (includes code from [this SO post](https://stackoverflow.com/a/18706818/14828697)). (PS This is nowhere as polished as libraries dedicated to only detecting the OS details)
 *
@@ -6,83 +7,17 @@ import { release, arch } from 'os';
 * @category Misc
 * @returns String
 * @example
-* await getOS(); // for Chrome 95+ and MS Edge 94+
+* await getOS(); // for Chrome 95+, Opera and MS Edge 94+
 * getOS(); // for all other use cases
 */
 
 const getOS = () => {
 	if (typeof navigator !== 'undefined') {
 		const nAgt = navigator.userAgent;
-		let verOffset, browser, version, nameOffset, ix, majorVersion;
-		if ((verOffset = nAgt.indexOf('Opera')) != -1) {
-			browser = 'Opera';
-			version = nAgt.substring(verOffset + 6);
-			if ((verOffset = nAgt.indexOf('Version')) != -1) {
-				version = nAgt.substring(verOffset + 8);
-			}
-		}
-		// Opera Next
-		if ((verOffset = nAgt.indexOf('OPR')) != -1) {
-			browser = 'Opera';
-			version = nAgt.substring(verOffset + 4);
-		}
-		// Legacy Edge
-		else if ((verOffset = nAgt.indexOf('Edge')) != -1) {
-			browser = 'Microsoft Legacy Edge';
-			version = nAgt.substring(verOffset + 5);
-		}
-		// Edge (Chromium)
-		else if ((verOffset = nAgt.indexOf('Edg')) != -1) {
-			browser = 'Microsoft Edge';
-			version = nAgt.substring(verOffset + 4);
-		}
-		// MSIE
-		else if ((verOffset = nAgt.indexOf('MSIE')) != -1) {
-			browser = 'Microsoft Internet Explorer';
-			version = nAgt.substring(verOffset + 5);
-		}
-		// Chrome
-		else if ((verOffset = nAgt.indexOf('Chrome')) != -1) {
-			browser = 'Chrome';
-			version = nAgt.substring(verOffset + 7);
-		}
-		// Safari
-		else if ((verOffset = nAgt.indexOf('Safari')) != -1) {
-			browser = 'Safari';
-			version = nAgt.substring(verOffset + 7);
-			if ((verOffset = nAgt.indexOf('Version')) != -1) {
-				version = nAgt.substring(verOffset + 8);
-			}
-		}
-		// Firefox
-		else if ((verOffset = nAgt.indexOf('Firefox')) != -1) {
-			browser = 'Firefox';
-			version = nAgt.substring(verOffset + 8);
-		}
-		// MSIE 11+
-		else if (nAgt.indexOf('Trident/') != -1) {
-			browser = 'Microsoft Internet Explorer';
-			version = nAgt.substring(nAgt.indexOf('rv:') + 3);
-		}
-		// Other browsers
-		else if ((nameOffset = nAgt.lastIndexOf(' ') + 1) < (verOffset = nAgt.lastIndexOf('/'))) {
-			browser = nAgt.substring(nameOffset, verOffset);
-			version = nAgt.substring(verOffset + 1);
-			if (browser.toLowerCase() == browser.toUpperCase()) {
-				browser = navigator.appName;
-			}
-		}
-		// trim the version string
-		if ((ix = version.indexOf(';')) != -1) version = version.substring(0, ix);
-		if ((ix = version.indexOf(' ')) != -1) version = version.substring(0, ix);
-		if ((ix = version.indexOf(')')) != -1) version = version.substring(0, ix);
-
-		majorVersion = parseInt('' + version, 10);
-		if (isNaN(majorVersion)) {
-			version = '' + parseFloat(navigator.appVersion);
-			majorVersion = parseInt(navigator.appVersion, 10);
-		}
-
+		const {
+			version,
+			name: browser,
+		} = getBrowser();
 		const nVer = navigator.appVersion;
 		let os = 'Unknown OS';
 		const clientStrings = [{
@@ -224,7 +159,7 @@ const getOS = () => {
 			break;
 		}
 		// console.log((browser === 'Chrome' && parseFloat(version) >= 95) || (browser === 'Microsoft Edge' && parseFloat(version) >= 94), parseFloat(version), browser);
-		if((browser === 'Chrome' && parseFloat(version) >= 95) || (browser === 'Microsoft Edge' && parseFloat(version) >= 94)) {
+		if((browser === 'Chrome' && parseFloat(version) >= 95) || (browser === 'Microsoft Edge' && parseFloat(version) >= 94) || browser === 'Opera') {
 			return navigator.userAgentData.getHighEntropyValues(['platformVersion'])
 				.then(ua => {
 					if (navigator.userAgentData.platform === 'Windows') {
@@ -232,17 +167,17 @@ const getOS = () => {
 						if (majorPlatformVersion >= 13) {
 							return 'Windows 11 or later';
 						}
-						if (majorPlatformVersion > 0) {
+						else if (majorPlatformVersion > 0) {
 							return 'Windows 10';
 						}
 						else {
 							return 'Windows 8 or later';
 						}
 					}
-					else {
-						return os + '-' + osVersion;
-					}
 				});
+		}
+		else {
+			return os + ' ' + osVersion;
 		}
 	}
 	if(typeof window === 'undefined') {
