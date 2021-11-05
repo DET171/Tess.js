@@ -58,11 +58,14 @@ console.log(Tess.isNil('Hello'));
 See the [docs](https://tess.js.org/). <br>
 You can also look at [this file](https://github.com/DET171/Tess.js/blob/master/test/es6.mjs) for some possile use cases (ignore the `import` at the top).
 
+# [Changelog](https://github.com/DET171/Tess.js/blob/master/CHANGELOG.md)
+
 # License
 MIT
 
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FDET171%2FTess.js.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FDET171%2FTess.js?ref=badge_large)
+
 
 # Others
 Vote for functions [here](https://forms.gle/t2tjVfxjUuVb1LVS7)!

@@ -66,10 +66,10 @@ console.log(Tess.pascalCase('hello there'));
   Tess.progressBar(1);
 }());
 
-Tess.markr().info('Hello')
-Tess.markr().success('Hello', ' Congrats! ')
-Tess.markr().error('Parse Error: (29:7)', ' FATAL ERROR ')
-Tess.markr().warn('no-unused-vars (10:8)')
+await Tess.markr.info('Hello')
+await Tess.markr.success('Hello', ' Congrats! ')
+await Tess.markr.error('Parse Error: (29:7)', ' FATAL ERROR ')
+await Tess.markr.warn('no-unused-vars (10:8)')
 console.log(Tess.ranKey(20));
 
 const sa = new Tess.StrictArray('object');
@@ -124,4 +124,6 @@ console.log(Tess.hexToRgb('#ff64c8'));
 console.log(Tess.includes(5, [[[[[1,3,5]]],2]]))
 console.log(Tess.includes(5, [[[[[1,3,4]]],2]]))
 
-console.log(Tess.getOS())
+console.log(await Tess.getOS())
+
+console.log(Tess.abbr('Attack of the Clones', true));

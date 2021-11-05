@@ -3,6 +3,7 @@ export { arrayify } from './misc/arrayify.js';
 export { typeOf } from './misc/typeOf.js';
 export { getOS } from './misc/os.js';
 export { getBrowser } from './misc/browser.js';
+export { abbr } from './misc/abbreviate.js';
 export { sparseEach } from './array/sparseEach.js';
 export { includes } from './array/includes.js';
 export { toJSON } from './array/toJSON.js';
