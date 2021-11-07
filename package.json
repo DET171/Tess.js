@@ -36,12 +36,11 @@
   },
   "scripts": {
     "prebuild": "npm run lint",
-    "build": "gulp transpile && bash echoCJS.sh && npm run bundle && npm run docs && gulp minify",
-    "bundle": "esbuild browser/base.js --bundle --outfile=browser/bundle.js && prepack browser/bundle.js --out browser/bundle.js --compatibility browser",
+    "build": "gulp transpile && gulp bundle && npm run docs",
     "postbuild": "npm run lint:fix && npm run test",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "docs": "jsdoc -c ./jsdoc.json -R ./README.md && echo tess.js.org > docs/CNAME",
+    "docs": "gulp doc",
     "test": "jest",
     "test:es6": "node test/es6",
     "prepublish": "npm run build"

@@ -116,3 +116,7 @@ it('should return true', () => {
 it('should return false', () => {
   expect(Tess.includes(5, [[[[[1,3,8]]],2]])).toBe(false);
 })
+
+test('squash()', () => {
+  expect(Tess.squash([1,2,3], [1,2], [4,5,6])).toStrictEqual([1,2,3,1,2,4,5,6]);
+})

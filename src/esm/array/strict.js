@@ -30,7 +30,7 @@ class StrictArray extends Array {
   */
 	push(...el) {
 		for (const item of el) {
-			if(typeof item == this.acceptedTypes) {
+			if(typeof item === this.acceptedTypes) {
 				this[this.length] = item;
 			}
 			else {
@@ -45,7 +45,7 @@ class StrictArray extends Array {
   */
 	unshift(...el) {
 		for (const item of el) {
-			if(typeof item == this.acceptedTypes) {
+			if(typeof item === this.acceptedTypes) {
 				this.reverse();
 				this[this.length] = item;
 				this.reverse();

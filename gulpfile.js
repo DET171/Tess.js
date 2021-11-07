@@ -3,35 +3,77 @@ const babel = require('gulp-babel');
 const terser = require('gulp-terser');
 const htmlmin = require('gulp-htmlmin');
 const babelrc = require('./.babelrc.json');
+const { exec } = require('child_process');
 
-function transpile(cb) {
-	gulp.src('./src/esm/**/*.js')
-		.pipe(babel(babelrc))
-		.pipe(gulp.dest('./src/cjs'));
+async function transpile(cb) {
+	await new Promise((resolve) => {
+		gulp.src('./src/esm/**/*.js')
+			.pipe(babel(babelrc))
+			.pipe(gulp.dest('./src/cjs'))
+			.on('finish', resolve);
+	});
+	exec('bash echoJSTypes.sh', (err, stdout, stderr) => {
+		if (err) {
+			cb(err);
+			throw err;
+		}
+		if (stdout) console.log(stdout);
+		if (stderr) {
+			console.error(stderr);
+			cb(err);
+		}
+	});
 	cb();
 }
 
-function minifyDocsJS(cb) {
+async function doc(cb) {
+	await new Promise((resolve, reject) => {
+		exec('npx jsdoc -c ./jsdoc.json -R ./README.md && echo tess.js.org > docs/CNAME', (err, stdout, stderr) => {
+			if (err) {
+				cb(err);
+				reject(err);
+				throw err;
+			}
+			if (stdout) console.log(stdout);
+			if (stderr) {
+				console.error(stderr);
+				reject(err);
+				cb(err);
+			}
+			resolve();
+		});
+	});
 	gulp.src('./docs/scripts/**/*.js')
 		.pipe(terser())
 		.pipe(gulp.dest('./docs/scripts/'));
-	cb();
-}
-
-function minifyDocsHTML(cb) {
 	gulp.src('./docs/*.html')
 		.pipe(htmlmin({ collapseWhitespace: true }))
 		.pipe(gulp.dest('./docs/'));
 	cb();
 }
 
-function bundle(cb) {
-	gulp.src('./browser/bundle.js')
-		// .pipe(babel(babelrc))
-		.pipe(terser())
-		.pipe(gulp.dest('./browser/'));
+async function bundle(cb) {
+	await new Promise((resolve, reject) => {
+		exec(['npx esbuild browser/base.js --bundle --outfile=browser/bundle.js',
+			'npx prepack browser/bundle.js --out browser/bundle.js --compatibility browser',
+			'npx terser browser/bundle.js -c -o browser/bundle.js'].join(' && '), (err, stdout, stderr) => {
+			if (err) {
+				cb(err);
+				reject(err);
+				throw err;
+			}
+			if (stdout) console.log(stdout);
+			if (stderr) {
+				console.error(stderr);
+				reject(err);
+				cb(err);
+			}
+			resolve();
+		});
+	});
 	cb();
 }
 
-exports.minify = gulp.parallel(minifyDocsJS, minifyDocsHTML, bundle);
-exports.transpile = gulp.parallel(transpile);
+exports.doc = doc;
+exports.transpile = transpile;
+exports.bundle = bundle;

@@ -7,6 +7,11 @@
 		"no-func-assign": "warn",
 		"no-empty-function": "warn",
 		"no-unsafe-finally": "warn",
-		"key-spacing": ["error", { "beforeColon": false }]
+		"key-spacing": [
+			"error",
+			{
+				"beforeColon": false
+			}
+		]
 	}
 }
