@@ -36,11 +36,9 @@ const Tess = require('tess.js');
 Browser (ES5):
 ```html
 <script src="https://cdn.jsdelivr.net/npm/tess.js/browser/bundle.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js"></script>
 ```
-Note: If you're using a very old browser, you may need to include the following in your HTML
-```html
-<script src="https://polyfill.io/v3/polyfill.min.js?features=Array.isArray,Array.prototype.copyWithin,Array.prototype.fill,Array.prototype.filter,Array.prototype.indexOf,Array.prototype.keys,Array.prototype.lastIndexOf,Array.prototype.reduce,Array.prototype.sort,ArrayBuffer,console,DataView,Function.prototype.bind,Map,Number.isInteger,Object.defineProperty,Object.keys,Object.setPrototypeOf,Promise,Reflect,Reflect.construct,Set,String.prototype.repeat,String.prototype.trim,Symbol,Symbol.for,Symbol.toPrimitive,Uint8Array,WeakMap,WeakSet"></script>
-```
+
 Browser (ESM):
 ```html
 <script type="module">

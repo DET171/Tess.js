@@ -11,7 +11,6 @@
     "@babel/preset-env": "^7.15.6",
     "buffer": "^6.0.3",
     "clean-jsdoc-theme": "^3.2.8",
-    "core-js": "^3.19.0",
     "esbuild": "^0.13.3",
     "eslint": "^7.32.0",
     "eslint-config-berry": "^0.15.5",
@@ -23,7 +22,8 @@
     "gulp-terser": "^2.1.0",
     "jest": "^27.2.1",
     "jsdoc": "~3.6.7",
-    "prepack": "^0.2.54"
+    "prepack": "^0.2.54",
+    "snyk": "^1.753.0"
   },
   "browser": "browser/bundle.js",
   "main": "src/cjs/index.js",

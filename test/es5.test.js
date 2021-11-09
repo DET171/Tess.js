@@ -120,3 +120,7 @@ it('should return false', () => {
 test('squash()', () => {
   expect(Tess.squash([1,2,3], [1,2], [4,5,6])).toStrictEqual([1,2,3,1,2,4,5,6]);
 })
+
+test('nnumeronym()', () => {
+  expect(Tess.numeronym('happy')).toBe('h3y');
+})
