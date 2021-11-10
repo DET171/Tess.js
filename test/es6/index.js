@@ -128,3 +128,4 @@ console.log(await Tess.getOS())
 
 console.log(Tess.abbr('Attack of the Clones', true));
 console.log(Tess.squash([1,2,3], [1,2], [4,5,6]));
+console.log(Tess.strToNumArray('1 2 3 4 5', ' '));

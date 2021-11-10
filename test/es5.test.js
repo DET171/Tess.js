@@ -124,3 +124,8 @@ test('squash()', () => {
 test('nnumeronym()', () => {
   expect(Tess.numeronym('happy')).toBe('h3y');
 })
+
+test('strToNumArray()', () => {
+  expect(Tess.strToNumArray('1 2 3 4 5', ' ')).toStrictEqual([1, 2, 3, 4, 5]);
+  expect(Tess.strToNumArray('12345', '')).toStrictEqual([1, 2, 3, 4, 5]);
+})

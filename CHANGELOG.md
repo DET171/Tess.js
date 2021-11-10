@@ -11,6 +11,9 @@ Yeah sorry for not including changes in previous versions
   ```
 * Minor version bump (0.1.x) will be a function API change or new function
 * Patch (0.0.x) will be code change but no API change
+
+# 3.3.0
+Added function `strToNumArray()`.
 # 3.2.0
 Added function `numerynom()`.
 
