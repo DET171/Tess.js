@@ -32,6 +32,7 @@ export { StrictArray } from './array/strict.js';
 export { stdDev } from './math/standard-deviation.js';
 export { roman } from './math/roman.js';
 export { ellipsis } from './str/ellipsis.js';
+export { snakeCase, kebabCase } from './str/snake-kebab.js';
 export { camelCase, pascalCase } from './str/pascal-camel.js';
 export { reverse } from './str/reverse.js';
 export { progressBar } from './console/bar.js';

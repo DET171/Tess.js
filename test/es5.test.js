@@ -129,3 +129,8 @@ test('strToNumArray()', () => {
   expect(Tess.strToNumArray('1 2 3 4 5', ' ')).toStrictEqual([1, 2, 3, 4, 5]);
   expect(Tess.strToNumArray('12345', '')).toStrictEqual([1, 2, 3, 4, 5]);
 })
+
+test('kebabCase() & snakeCase()', () => {
+  expect(Tess.kebabCase('hello     world')).toBe('hello-world');
+  expect(Tess.snakeCase('hello               there')).toBe('hello_there');
+})

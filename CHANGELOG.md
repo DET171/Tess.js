@@ -18,7 +18,7 @@ Added function `strToNumArray()`.
 Added function `numerynom()`.
 
 # 3.1.0
-Added `squash()` function for squashing arrays together.
+Added `squash()` function for squashing arrays together.  
 
 ## v3.0.0
 Changed `getOS()` to `Promise` for consistency.
@@ -32,5 +32,4 @@ Usage:
 
 ```js
 abbr('Attack of the Clones') // => AOTC
-abbr('Attack of the Clones', true) // => AotC
 ```
