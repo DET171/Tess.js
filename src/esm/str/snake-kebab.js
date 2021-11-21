@@ -14,7 +14,7 @@ const snakeCase = (string) => string.replace(/ +/g, '_');
 /**
 * Turns a string into kebab case
 *
-* @since v1.1.3
+* @since v3.4.0
 * @category string
 * @param {string} string - The string to turn into kebab case
 * @returns string

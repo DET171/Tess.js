@@ -1,4 +1,3 @@
-// import { markr } from '../console/text.js';
 /* eslint-disable no-empty-function */
 /**
 * A strict array that only accepts one type of element
