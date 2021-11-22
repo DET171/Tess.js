@@ -40,6 +40,7 @@ export { progressBar } from './console/bar.js';
 export { isString } from './str/isString.js';
 export { Collection } from './array/collection.js';
 export { Calculator } from './math/calculate.js';
+export { formatNumber } from './math/formatNumber.js';
 export { strToNumArray } from './math/stringToNumArray.js';
 export { m } from './conversion/metre.js';
 export { hexToRgb } from './conversion/hexToRgb.js';

@@ -134,3 +134,7 @@ test('kebabCase() & snakeCase()', () => {
   expect(Tess.kebabCase('hello     world')).toBe('hello-world');
   expect(Tess.snakeCase('hello               there')).toBe('hello_there');
 })
+
+test('formatNumber()', () => {
+  expect(Tess.formatNumber(1000.12345)).toBe('1,000.12345');
+})

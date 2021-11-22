@@ -133,3 +133,5 @@ console.log(Tess.strToNumArray('1 2 3 4 5', ' '));
 console.log(Tess.snakeCase('hello               there'));
 console.log(Tess.kebabCase('hello     world'));
 console.log(Tess.fill(Array(5), 'a', 1, 3));
+
+console.log(Tess.formatNumber(1000.12345));
