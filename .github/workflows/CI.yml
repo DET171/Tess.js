@@ -30,7 +30,7 @@ jobs:
           check-latest: true
 
       - name: Run CI 👨🏻‍💻
-        run: npm ci
+        run: npm i && npm run build
 
       - name: publish code coverage to code-climate (duh)
         uses: paambaati/codeclimate-action@v2.7.5
