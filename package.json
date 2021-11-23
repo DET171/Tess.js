@@ -1,6 +1,6 @@
 {
   "name": "tess.js",
-  "version": "3.6.0",
+  "version": "3.7.0",
   "description": "🔧🔨🔩💉 A bunch of JS Utils in one place (including handy conversions)",
   "author": "Dusty <mrgeek484@gmail.com>",
   "license": "MIT",
@@ -42,8 +42,7 @@
     "lint:fix": "eslint --fix .",
     "docs": "gulp doc",
     "test": "jest",
-    "test:es6": "node test/es6",
-    "prepublish": "npm run build"
+    "test:es6": "node test/es6"
   },
   "repository": {
     "type": "git",
