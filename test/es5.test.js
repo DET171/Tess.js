@@ -138,3 +138,10 @@ test('kebabCase() & snakeCase()', () => {
 test('formatNumber()', () => {
   expect(Tess.formatNumber(1000.12345)).toBe('1,000.12345');
 })
+
+test('mode(), mean(), & median()', () => {
+  expect(Tess.mean([1, 6, 8, 16, 28])).toBe(11.8);
+  expect(Tess.median([8, 6, 1, 16, 28, 9])).toBe(8.5);
+  expect(Tess.median([8, 6, 1, 16, 28])).toBe(8);
+  expect(Tess.mode([1, 6, 8, 16, 28, 8])).toBe(8);
+})

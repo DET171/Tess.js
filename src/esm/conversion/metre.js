@@ -3,8 +3,8 @@
 *
 * @since v2.5.2-beta.3
 * @category Conversion
-* @param {number} metres - The amount to convert
-* @param {string} [to=km] - What the metres should be converted to
+* @param {Number} metres - The amount to convert
+* @param {String} [to=km] - What the metres should be converted to
 * Accepted units: <br>
 * km, cm, mm, um, nm, ft, yard, miles, inch, m
 * @returns string

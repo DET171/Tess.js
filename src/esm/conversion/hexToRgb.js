@@ -3,7 +3,7 @@
 *
 * @since v2.9.0
 * @category Conversion
-* @param {string} hex - The hexadecimal color code
+* @param {String} hex - The hexadecimal color code
 * @returns string
 * @example
 * Tess.hexToRgb(''#ff64c8') ///=> 255, 100, 200

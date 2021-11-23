@@ -5,7 +5,7 @@
 * @category Conversion?/Array?/Math?
 * @param {string} string - The string to turn into an array of numbers
 * @param {string} [separator=<space>] - The separator that is used to separate numbers
-* @returns string
+* @returns {Array}
 * @example
 * strToNumArray('1 2 3 4') // => [1, 2, 3, 4]
 */

@@ -135,3 +135,6 @@ console.log(Tess.kebabCase('hello     world'));
 console.log(Tess.fill(Array(5), 'a', 1, 3));
 
 console.log(Tess.formatNumber(1000.12345));
+console.log(Tess.mode([1, 6, 8, 16, 28, 8]));
+console.log(Tess.mean([1, 6, 8, 16, 28]));
+console.log(Tess.median([9, 8, 6, 1, 16, 28]));

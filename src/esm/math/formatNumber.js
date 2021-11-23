@@ -3,8 +3,8 @@
 *
 * @since v3.6.0
 * @category Math
-* @param {number} number - The number to format
-* @param {string} [thousandsSeparator=,] - The thousands separator
+* @param {Number} number - The number to format
+* @param {String} [thousandsSeparator=,] - The thousands separator
 * @returns {String}
 * @example
 * formatNumber(1000) // => '1,000'

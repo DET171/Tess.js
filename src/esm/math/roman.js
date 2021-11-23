@@ -4,7 +4,7 @@
 *
 * @since v2.5.2-beta.7
 * @category Math
-* @param {number} val - The value to convert from/to Roman Numerals
+* @param {Number} val - The value to convert from/to Roman Numerals
 * @returns number/string
 * @example
 * roman('IV')

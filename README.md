@@ -56,7 +56,6 @@ console.log(Tess.isNil('Hello'));
 See the [docs](https://tess.js.org/). <br>
 You can also look at [this file](https://github.com/DET171/Tess.js/blob/master/test/es6.mjs) for some possile use cases (ignore the `import` at the top).
 
-# [Changelog](https://github.com/DET171/Tess.js/blob/master/CHANGELOG.md)
 
 # License
 MIT

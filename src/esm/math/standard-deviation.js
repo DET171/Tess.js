@@ -3,7 +3,7 @@
 *
 * @since v2.6.0
 * @category Math
-* @param {array} array - The array to get the standard deviation from
+* @param {Array<number>} array - The array to get the standard deviation from
 * @returns number
 * @example
 * stdDev([1, 6, 8, 16, 28])
