@@ -11,7 +11,7 @@
 */
 
 const strToNumArray = (string, separator) => {
-	separator = separator ?? ' ';
+	separator ??= ' ';
 	return string.split(separator).map(Number);
 };
 

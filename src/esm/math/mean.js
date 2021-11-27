@@ -4,7 +4,7 @@
 * @since v3.7.0
 * @category Math
 * @param {Array<number>} numbers - The array to get the mean from
-* @returns number
+* @returns {number}
 * @example
 * mean([1, 6, 8, 16, 28]) // => 11.8
 */

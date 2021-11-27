@@ -145,3 +145,7 @@ test('mode(), mean(), & median()', () => {
   expect(Tess.median([8, 6, 1, 16, 28])).toBe(8);
   expect(Tess.mode([1, 6, 8, 16, 28, 8])).toBe(8);
 })
+
+test('circleArea()', () => {
+  expect(Tess.circleArea(9)).toBe(254.46900494077323);
+})

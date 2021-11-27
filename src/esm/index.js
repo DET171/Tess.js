@@ -41,6 +41,7 @@ export { isString } from './str/isString.js';
 export { Collection } from './array/collection.js';
 export { Calculator } from './math/calculate.js';
 export { mean } from './math/mean.js';
+export { circleArea } from './math/circleArea.js';
 export { mode } from './math/mode.js';
 export { median } from './math/median.js';
 export { formatNumber } from './math/formatNumber.js';

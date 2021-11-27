@@ -3,7 +3,7 @@
 *
 * @since v3.7.0
 * @category Math
-* @param {Array<number>} numbers - The array to get the median from
+* @param {Number[]} numbers - The array to get the median from
 * @returns number
 * @example
 * median([8, 6, 1, 16, 28]) // => 8
