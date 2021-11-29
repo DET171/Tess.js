@@ -54,7 +54,9 @@ async function doc(cb) {
 
 async function bundle(cb) {
 	await new Promise((resolve, reject) => {
-		exec(['npx esbuild browser/base.js --bundle --outfile=browser/bundle.js --format=iife'].join(' && '), (err, stdout, stderr) => {
+		exec(['npx esbuild browser/base.js --bundle --outfile=browser/bundle.js',
+			'npx prepack browser/bundle.js --out browser/bundle.js --compatibility browser',
+			'npx terser browser/bundle.js -c -o browser/bundle.js'].join(' && '), (err, stdout, stderr) => {
 			if (err) {
 				cb(err);
 				reject(err);

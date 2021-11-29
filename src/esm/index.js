@@ -9,6 +9,7 @@ export { sparseEach } from './array/sparseEach.js';
 export { includes } from './array/includes.js';
 export { toJSON } from './array/toJSON.js';
 export { squash } from './array/squash.js';
+export { binarySearch } from './array/binarySearch.js';
 export { fill } from './array/fill.js';
 export { beforePos, afterPos, afterEl, beforeEl } from './array/after-before.js';
 export { chunk } from './array/chunk.js';

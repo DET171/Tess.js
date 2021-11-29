@@ -7,6 +7,7 @@ a[5] = "five";
 a[10] = "ten";
 a[100000] = "one hundred thousand";
 a.b = "bee";
+let array = [1,8,2,3,4,5,6,7,10,9]
 
 console.log(Tess.isNil(empty));
 console.log(Tess.arrayify(hello));
@@ -139,3 +140,4 @@ console.log(Tess.mode([1, 6, 8, 16, 28, 8]));
 console.log(Tess.mean([1, 6, 8, 16, 28]));
 console.log(Tess.median([9, 8, 6, 1, 16, 28]));
 console.log(Tess.circleArea(9));
+console.log(Tess.binarySearch(array.sort((a, b) => a - b), 3, false));

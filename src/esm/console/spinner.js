@@ -13,6 +13,7 @@ const spinner = {};
 * spinner#start (Node.js only)
 *
 * @since v2.1.1
+* @memberof spinner
 * @category console
 * @example
 * spinner.start() // starts spinner
@@ -38,6 +39,7 @@ spinner.start = async () => {
 * spinner#stop (Node.js only)
 *
 * @since v2.1.1
+* @memberof spinner
 * @category console
 * @example
 * spinner.stop() // stops spinner

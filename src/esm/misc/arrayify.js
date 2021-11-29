@@ -9,9 +9,7 @@
 * arrayify('Hello')       //=> ['Hello']
 */
 const arrayify = (value) => {
-	const array = [];
-	array.push(value);
-	return array;
+	return [value];
 };
 
 export { arrayify };

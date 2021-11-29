@@ -17,6 +17,7 @@ const markr = {};
 		* markr.info
 		*
 		* @since v2.2.0
+		* @memberof markr
 		* @category console
 		* @param {string} text - The text to log in the console
 		* @param {string} [header= INFO ] - The header of the message
@@ -32,6 +33,7 @@ markr.info = async (text, header = ' INFO ') => {
 		* markr.success
 		*
 		* @since v2.2.0
+		* @memberof markr
 		* @category console
 		* @param {string} text - The text to log in the console
 		* @param {string} [header= SUCCESS ] - The header of the message
@@ -48,6 +50,7 @@ markr.success = async (text, header = ' SUCCESS ') => {
 		*
 		* @since v2.2.0
 		* @category console
+		* @memberof markr
 		* @param {string} text - The text to log in the console
 		* @param {string} [header= ERROR ] - The header of the message
 		*/
@@ -63,6 +66,7 @@ markr.error = async (text, header = ' ERROR ') => {
 		*
 		* @since v2.2.0
 		* @category console
+		* @memberof markr
 		* @param {string} text - The text to log in the console
 		* @param {string} [header= WARNING ] - The header of the message
 		*/
